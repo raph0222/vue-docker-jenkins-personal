@@ -1,10 +1,9 @@
 <script setup lang="ts">
+import LanguageComponent from '@/components/LanguageComponent.vue'
 </script>
-<!-- 
-<template>
-    
-</template> -->
 
 <template>
-  <p>COVER A FAIRE</p>
+  <div class="flex">
+    <LanguageComponent />
+  </div>
 </template>

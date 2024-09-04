@@ -1,19 +1,24 @@
 {
-  "extends": "@tsconfig/node20/tsconfig.json",
-  "include": [
-    "vite.config.*",
-    "vitest.config.*",
-    "cypress.config.*",
-    "nightwatch.conf.*",
-    "playwright.config.*"
-  ],
+  "extends": "./tsconfig.json",
   "compilerOptions": {
-    "composite": true,
-    "noEmit": true,
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
-
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "types": ["node"]
-  }
+    "target": "es6",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "jsx": "preserve",
+    "noImplicitAny": false
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/**/*.json",
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

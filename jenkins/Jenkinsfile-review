@@ -1,0 +1,32 @@
+pipeline {
+    agent any
+    environment {
+        NODE_IMAGE = 'node:22.8'
+    }
+    stages {
+        stage('Install and Lint') {
+            steps {
+                script {                    
+                    docker.image(NODE_IMAGE).inside {
+                        sh 'npm install'
+                        sh 'npm run lint'
+                    }
+                }
+            }
+        }
+        stage('Build') {
+            steps {
+                script {                    
+                    docker.image(NODE_IMAGE).inside {
+                        sh 'npm run build'
+                    }
+                }
+            }
+        }
+    }
+    post {
+        always {
+            cleanWs()
+        }
+    }
+}

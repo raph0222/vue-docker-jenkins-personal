@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import AnimatedBackground from '@/components/AnimatedBackground.vue';
+import FooterComponent from '@/components/FooterComponent.vue'
 
 </script>
 
 <template>
-  <RouterView />
-  <AnimatedBackground />
+  <div class="flex-1 mx-auto px-4 lg:px-8 lg:w-[calc(100%-16rem)] max-w-screen-lg lg:relative">
+    <RouterView />
+    <FooterComponent />
+  </div>
 </template>
 
 <style scoped>
@@ -27,18 +29,9 @@ nav {
   margin-top: 2rem;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
 nav a {
   display: inline-block;
   padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
 }
 
 nav a:first-of-type {

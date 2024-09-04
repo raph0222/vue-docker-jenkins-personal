@@ -1,4 +1,5 @@
-const USER_NAME = "Penelope Lucet"
-const POSITION = "Fullstack Developer"
+const LINKEDIN_PROFILE = "https://www.linkedin.com/in/raro217/"
+const GITHUB_PROFILE = "https://github.com/raph0222"
+const MAIL = "raph@naver.com"
 
-export default {USER_NAME, POSITION}
+export default { LINKEDIN_PROFILE, MAIL, GITHUB_PROFILE }
