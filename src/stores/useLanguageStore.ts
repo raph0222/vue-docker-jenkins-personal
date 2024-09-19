@@ -8,5 +8,8 @@ export const useLanguageStore = defineStore('languageStore', {
     setLanguage(language: string) {
       this.currentLanguage = language
     },
+    isKorean() {
+      return this.currentLanguage === 'ko'
+    }
   },
 })

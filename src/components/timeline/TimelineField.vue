@@ -3,7 +3,7 @@
     <div :class="['timeline-content', rightPosition ? 'text-left' : 'text-right']">
       <div>
         <h2 class="font-bold">{{ title }}</h2>
-        <div class="timeline-date mb-2">{{ date }}</div>
+        <div class="timeline-date mb-3 text-lightgray">{{ formattedStartDate }} - {{ formattedEndDate }}, {{ period }}</div>
       </div>
       <p class="text-justify">{{ textField }}</p>
     </div>
@@ -11,7 +11,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, computed } from 'vue'
+import { getPeriodFromDateString, toStringYearMonthDate } from '@/utils/dateUtils'
 
 export default defineComponent({
   name: 'TimelineField',
@@ -24,7 +25,11 @@ export default defineComponent({
       type: String,
       required: true,
     },
-    date: {
+    startDate: {
+      type: String,
+      required: true,
+    },
+    endDate: {
       type: String,
       required: true,
     },
@@ -32,6 +37,18 @@ export default defineComponent({
       type: Boolean,
       default: false,
     },
+  },
+  setup(props) {
+
+    const formattedStartDate = computed(() => toStringYearMonthDate(props.startDate))
+    const formattedEndDate = computed(() => toStringYearMonthDate(props.endDate))
+    const period = computed(() => getPeriodFromDateString(props.startDate, props.endDate))
+
+    return {
+      formattedStartDate,
+      formattedEndDate,
+      period,
+    }
   },
 })
 </script>

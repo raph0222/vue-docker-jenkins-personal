@@ -1,4 +1,8 @@
-const fr = {
+import en from './en'
+import type { LocaleMessages } from '@/types/localeMessages'
+
+// can have only same field than English, if there are missing fields => english value
+const fr: Partial<LocaleMessages> = {
     USER_NAME: 'Raphael Rocha',
     USER_POSITION: 'Développeur Fullstack',
     USER_LOCATION: 'Séoul, Corée du Sud',
@@ -22,7 +26,6 @@ const fr = {
                à travailler dans mon domaine, qui est le développement.</p>
             `,
     TIMELINE_TITLE_1: `Développeur Fullstack chez AtolCD`,
-    TIMELINE_DATE_1: `Juin 2023 - Juil 2024`,
     TIMELINE_TEXT_1: `Travail sur plusieurs projets, au sein d'une équipe d'environ 10 personnes, utilisant plusieurs stacks différentes.
                       Développement de fonctionnalités, correction de bugs, développement de logique métier, nouvelles 
                       API RESTFUL, webservices, fix de sécurité, captcha on-premise...
@@ -33,11 +36,15 @@ const fr = {
                       Mise en place de serveurs de démo, mises à jour Java, nouveau processus de packaging et de déploiement, documentation, 
                       script Ansible pour configurer le serveur de démo.`,
     TIMELINE_TITLE_2: `Développeur Web au Conseil Départemental de la Haute-Saône`,
-    TIMELINE_DATE_2: `Mars 2021 - Juin 2021`,
     TIMELINE_TEXT_2: `Conception et Développement : De manière similaire au précédent stage, j'ai réalisé les mêmes tâches pour un projet différent.`,
     TIMELINE_TITLE_3: `Développeur Web au Conseil Départemental de la Haute-Saône`,
-    TIMELINE_DATE_3: `Oct 2019 - Déc 2019`,
     TIMELINE_TEXT_3: `Conception et Développement : Interface web et back-office utilisant Js/Jquery et un backend PHP. Conception de bases de données PostgreSQL.`,
+    // period text
+    TEXT_YEAR: 'an',
+    TEXT_MONTH: 'mois',
 }
 
-export default fr
+//english default overwritten by fr
+const french = {...en, ...fr}
+
+export default french

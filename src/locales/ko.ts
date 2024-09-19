@@ -1,4 +1,9 @@
-const ko = {
+import en from "./en"
+import type { LocaleMessages } from '@/types/localeMessages'
+
+//TODO: natural translation
+// can have only same field than English, if there are missing fields => english value
+const ko: Partial<LocaleMessages> = {
     USER_NAME: '라파엘 로차',
     USER_POSITION: '풀스택 개발자',
     USER_LOCATION: '서울, 대한민국',
@@ -13,7 +18,6 @@ const ko = {
               이와 관련 없는 경험을 통해 한국의 직장 문화를 엿볼 수 있었습니다. 이 경험은 저를 더욱 개발 분야에서 일하고 싶게 만들었습니다.</p>
             `,
     TIMELINE_TITLE_1: `AtolCD에서 풀스택 개발자`,
-    TIMELINE_DATE_1: `2023년 6월 - 2024년 7월`,
     TIMELINE_TEXT_1: `여러 프로젝트에서 10명 이상의 팀과 함께 다양한 스택을 사용하여 일했습니다.
                       기능 개발, 버그 수정, 비즈니스 로직 개발, 새로운 
                       RESTFUL API, 웹 서비스, 보안 수정, 온프레미스 캡차 등을 처리했습니다.
@@ -21,11 +25,14 @@ const ko = {
                       마지막으로, Jenkins 파이프라인과 같은 새로운 CI/CD 워크플로우 작업을 진행하고, Jenkins 내에서 Docker를 사용하고 docker-compose로 패키지, 데이터베이스 등을 생성했습니다.
                       데모 서버 설정, Java 업그레이드, 새로운 패키징/배포 프로세스, 문서 작성, 데모 서버 설정을 위한 Ansible 스크립트 작업을 진행했습니다.`,
     TIMELINE_TITLE_2: `오뜨손주 지방 정부 웹 개발자`,
-    TIMELINE_DATE_2: `2021년 3월 - 2021년 6월`,
     TIMELINE_TEXT_2: `기획 및 개발: 이전 인턴십과 유사하게, 다른 프로젝트에서도 동일한 작업을 수행했습니다.`,
     TIMELINE_TITLE_3: `오뜨손주 지방 정부 웹 개발자`,
-    TIMELINE_DATE_3: `2019년 10월 - 2019년 12월`,
     TIMELINE_TEXT_3: `기획 및 개발: JS/Jquery 및 PHP 백엔드를 사용하여 웹 인터페이스 및 백오피스 개발. PostgreSQL 데이터베이스 설계.`,
+    TEXT_YEAR: `년`,
+    TEXT_MONTH: `월`,
 }
 
-export default ko
+//english default overwritten by fr
+const korean = {...en, ...ko }
+
+export default korean

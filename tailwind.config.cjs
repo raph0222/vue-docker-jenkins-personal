@@ -13,7 +13,7 @@ module.exports = {
           DEFAULT: '#1c2e4a',
           dark: '#152238'
         },
-        lightgray: '#d3d3d3',
+        lightgray: '#8c8e90',
         black: '#000000',
       },
     },
