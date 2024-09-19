@@ -3,8 +3,9 @@ version: '3.8'
 services:
   front:
     build:
-      context: ..
+      context: .
       dockerfile: docker/Dockerfile
+    env_file: .env
     networks:
       - front-network
     volumes:
@@ -15,8 +16,7 @@ services:
     environment:
       - TZ=Asia/Seoul
       - JAVA_OPTS=-Dhudson.plugins.git.GitSCM.ALLOW_LOCAL_CHECKOUT=true
-    # verify docker group ID, jenkins user will have same gid than your user on host (docker.sock perm)
-    #user: "${USER_ID}:${DOCKER_GID}"
+    user: "${USER_ID}:${USER_GID}"
 
 networks:
   front-network:
