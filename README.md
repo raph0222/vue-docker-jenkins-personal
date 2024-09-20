@@ -2,7 +2,9 @@
 
 This is a how-to-use file explaining the logic used in this project. This project development is still ongoing. Improvements and backend project will be done.
 
-## Docker
+## /Docker
+
+This path is used to run the server inside a docker container.
 
 If necessary, you can run the front using docker for a simpler usage. (you need to have docker already installed).
 It will run the app from the docker. You can access the app from [http://localhost:9992/](http://localhost:9992/)
@@ -21,10 +23,18 @@ npm install
 npm run dev
 ```
 
-## Jenkins
-There is a Jenkins server setup in a docker container. You can access jenkins from [http://localhost:8081/](http://localhost:8081/) It will be used to simply handle code "reviews" for now. Each time code needs to be merged, jenkins will be triggered, start a docker container with node and verify if the code can be : linted, built... (see /jenkins/Jenkinsfile). Update the .env with your GID as explained if you want to test it out.
+## /Jenkins
 
-notes : for now, it uses local code, as the github repo is not created yet. The review pipeline is triggered manually by simply starting the build.
+This path is used to run a Jenkins server setup in a docker container.
+
+You can access jenkins from [http://localhost:8081/](http://localhost:8081/) It is used to handle code "reviews", and the deployment pipeline too for now.
+*Update the .env DOCKER_GID value with your GID for jenkins permissions with docker host to test it out*
+
+**2 pipelines** :
+
+- review : Each time code needs to be merged, jenkins will be triggered, docker inside jenkins and check if the project can be : linted, built... (manual for now)
+
+- deploy : get the code from github repo, docker inside jenkins to build the /dist. Send the build to an EC2 instance via ssh. Restart apache.
 
 ```sh
 # the jenkins and docker files are located in /jenkins

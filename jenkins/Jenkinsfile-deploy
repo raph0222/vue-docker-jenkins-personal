@@ -1,0 +1,60 @@
+pipeline {
+    agent any
+    environment {
+        NODE_IMAGE = 'node:22.8'
+    }
+    parameters {
+        string(name: 'EC2_USER', defaultValue: 'ec2-user', description: 'EC2 instance user')
+        string(name: 'EC2_HOST', defaultValue: 'ec2-3-25-103-142.ap-southeast-2.compute.amazonaws.com', description: 'EC2 instance hostname')
+        //ssh key value has been added to jenkins credentials
+        credentials(name: 'EC2_CREDENTIALS', defaultValue: 'credentials-ec2-user', description: 'SSH private key to access EC2')
+    }
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'master', url: 'https://github.com/raph0222/vue-docker-jenkins-personal.git'
+            }
+        }
+        stage('Install Dependencies') {
+            steps {
+                script {
+                    docker.image(NODE_IMAGE).inside {
+                        sh 'npm install'
+                    }
+                }
+            }
+        }
+        stage('Build') {
+            steps {
+                script {
+                    docker.image(NODE_IMAGE).inside {
+                        sh 'npm run build'
+                    }
+                }
+            }
+        }
+        stage('Deploy to EC2') {
+            steps {
+                withCredentials([sshUserPrivateKey(credentialsId: 'EC2_CREDENTIALS', keyFileVariable: 'EC2_KEY')]) {
+                    sh """
+                        scp -r ${WORKSPACE}/dist/* ${params.EC2_USER}@${params.EC2_HOST}:/var/www/html
+                    """
+                }
+            }
+        }
+        stage('Restart Apache') {
+            steps {
+                withCredentials([sshUserPrivateKey(credentialsId: 'EC2_CREDENTIALS', keyFileVariable: 'EC2_KEY')]) {
+                    sh """
+                        ssh ${params.EC2_USER}@${params.EC2_HOST} 'sudo systemctl restart httpd'
+                    """
+                }
+            }
+        }
+    }
+    post {
+        always {
+            cleanWs()
+        }
+    }
+}

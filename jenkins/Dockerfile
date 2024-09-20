@@ -2,6 +2,8 @@ FROM jenkins/jenkins:lts
 
 USER root
 
+WORKDIR /var/jenkins_home
+
 # dependencies and clean
 RUN apt-get update && \
     apt-get install -y \
