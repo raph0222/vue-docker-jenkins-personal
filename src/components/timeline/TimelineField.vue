@@ -1,18 +1,32 @@
 <template>
-  <div :class="['timeline-item', { right: rightPosition }]">
-    <div :class="['timeline-content', rightPosition ? 'text-left' : 'text-right']">
-      <div>
-        <h2 class="font-bold">{{ title }}</h2>
-        <div class="timeline-date mb-3 text-lightgray">{{ formattedStartDate }} - {{ formattedEndDate }}, {{ period }}</div>
+  <!-- <left> <mid> <right> = display content on either left OR right, and mid part is the white vertical timeline -->
+  <div class="flex items-center text-justify">
+    <div id="left-subpart" class="flex-1">
+      <div v-if="!isRight"
+        :class="['mb-5 mr-5',
+        // if mobile => add separating line for visibility
+        isMobile ? 'border-b-2 border-darkgray pb-2' : '']">
+        <h2 :class="['flex title-text-timeline', !isRight ? 'left-timeline-text': 'right-timeline-text']">{{ title }}</h2>
+        <div :class="['flex date-text-timeline', !isRight ? 'left-timeline-text' : 'right-timeline-text']">{{ formattedStartDate }} - {{ formattedEndDate }}, {{ period }}</div>
+        <div class="">{{ textField }}</div>
       </div>
-      <p class="text-justify">{{ textField }}</p>
+    </div>
+    <!-- if mobile device, just display on the left-->
+    <div v-if=!isMobile id="mid-subpart" class="w-[2px] bg-white self-stretch"></div>
+    <div v-if=!isMobile id="right-subpart" class="flex-1">
+      <div v-if=isRight class="mb-5 ml-5">
+        <h2 class="title-text-timeline">{{ title }}</h2>
+        <div class="date-text-timeline">{{ formattedStartDate }} - {{ formattedEndDate }}, {{ period }}</div>
+        <div class="">{{ textField }}</div>
+      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, computed } from 'vue'
+import { defineComponent, computed, onMounted, onBeforeUnmount } from 'vue'
 import { getPeriodFromDateString, toStringYearMonthDate } from '@/utils/dateUtils'
+import { useDeviceStore } from '@/stores/useDeviceStore'
 
 export default defineComponent({
   name: 'TimelineField',
@@ -40,35 +54,50 @@ export default defineComponent({
   },
   setup(props) {
 
+    const deviceStore = useDeviceStore()
+
     const formattedStartDate = computed(() => toStringYearMonthDate(props.startDate))
     const formattedEndDate = computed(() => toStringYearMonthDate(props.endDate))
     const period = computed(() => getPeriodFromDateString(props.startDate, props.endDate))
+
+    const isMobile = computed(() => deviceStore.getIsMobile || false )
+    const isRight = computed(() => props.rightPosition && !isMobile.value)
+
+    onMounted(() => {
+      deviceStore.initResizeListener()
+    })
+
+    onBeforeUnmount(() => {
+      deviceStore.removeResizeListener()
+    })
 
     return {
       formattedStartDate,
       formattedEndDate,
       period,
+      isMobile,
+      isRight,
     }
   },
 })
 </script>
 
 <style scoped>
-.timeline-item {
-  position: relative;
-  padding: 10px;
-  width: 50%;
+.left-timeline-text {
+  @apply justify-end;
 }
 
-.timeline-item.right {
-  left: 50%;
+.right-timeline-text {
+  @apply justify-start;
 }
 
-.timeline-content {
-  padding: 10px;
+.date-text-timeline {
+  @apply text-lightgray;
+  @apply mb-3;
+  @apply italic;
 }
 
-.timeline-date {
-  font-style: italic;
+.title-text-timeline {
+  @apply font-bold;
 }
 </style>

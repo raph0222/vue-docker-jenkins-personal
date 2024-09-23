@@ -1,7 +1,7 @@
 <template>
-  <section id="experience-section" class="experience-part">
-    <h1 class="text-blue-light font-bold">Experience</h1>
-    <div class="timeline relative max-w-[1000px] mb-[50px]">
+  <section id="experience-section">
+    <h1 class="text-blue-light font-bold mb-2">Experience</h1>
+    <div class="">
       <TimelineField
         :title="timeline1.title"
         :textField="timeline1.text"
@@ -65,13 +65,4 @@ export default defineComponent({
 
 <style scoped>
 /* line */
-.timeline::before {
-  content: "";
-  position: absolute;
-  width: 2px;
-  @apply bg-white;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-}
 </style>
