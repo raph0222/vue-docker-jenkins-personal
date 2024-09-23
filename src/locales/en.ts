@@ -7,17 +7,18 @@ const en: LocaleMessages = {
   USER_LOCATION: 'Seoul, South Korea',
   BIO_TEXT: `
             <p>Hello, I'm Raphael, a junior fullstack developer born in France, now living in South Korea.</p>
-            <p>I have more than a year experience as a developer. I'm currently working on personal 
-            projects such as this one, and will be working on a backend oriented project as my next one.</p>
-            <p>I lived one year in Korea from May 2022 to May 2023. Then I came back in France, worked over a year until July 2024 as a fullstack developer at AtolCD (Dijon).
-            Now, I'm back to Korea to pursue a career here. My plan is to live in Seoul, which is why I'm currently learning Korean at Chung-Ang University (Korean Language Program) with a D-4 visa, while looking for 
+            <p>I have more than a year of experience as a developer. I'm currently working on personal projects, 
+            including this one, and my next project will focus on backend development</p>
+            <p>I lived one year in Korea from May 2022 to May 2023. After returning to France, I worked as a fullstack developer 
+            at AtolCD (Dijon) for over a year, until July 2024
+            Now, I'm back to Korea to pursue a career here. My plan is to live in Seoul, which is why I'm currently learning Korean at Chung-Ang University 
+            (Korean Language Program) with a D-4 visa, while looking for 
             a position as a fullstack developer.</p>
             <p>Being a developer is a really fulfulling position for me. Everyday, you learn new things, new practices, and this is always challenging to
             make clean code, use good practice, keep up to date with new updates. 
-            Everyday, you have to share knowledge, and receive feedback, which means improvement. This is one of the best part in my opinion.</p>
-            <p> I've work at Manpower Korea for 6 months (12/2022 - 06-2023) as a part-time IT recruiter, I couldn't find any part-time position as a developer at that time. 
-            This IT-unrelated experience gave me a 
-            glimpse of the korean working culture. It made me even more motivated to work in my domain, which is a development.</p>
+            Every day, you learn something new, whether it's new techniques, best practices, or staying updated with the latest advancements.</p>
+            <p> I worked at Manpower Korea for 6 months (12/2022 - 06-2023) as a part-time IT recruiter. Although not directly related to IT development, 
+            this experience gave me insight into Korean work culture and further fueled my desire to work in my field: software development</p>
           `,
   TIMELINE_TITLE_1: `Fullstack Developer at AtolCD`,
   TIMELINE_START_DATE_1: '2023-06',

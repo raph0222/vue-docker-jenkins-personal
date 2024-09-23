@@ -20,10 +20,9 @@ const fr: Partial<LocaleMessages> = {
               produire du clean code, d'utiliser de bonnes pratiques, et de rester à jour avec les nouvelles sorties.
               Chaque jour, je partage des connaissances et surtout, je reçois du feedback pour améliorer ce que je fais. C'est l'un des meilleurs aspects,
                selon moi.</p>
-              <p>J'ai travaillé chez Manpower Korea pendant 6 mois (12/2022 - 06/2023) en tant que recruteur IT à temps partiel, je n'ai pas pu trouver de
-               poste à temps partiel en tant que développeur à ce moment-là, d'où ce choix.
+              <p>J'ai travaillé chez Manpower Korea pendant 6 mois (12/2022 - 06/2023) en tant que recruteur IT à temps partiel.
               Cette expérience, même si elle est non liée à l'IT, m'a donné un aperçu de la culture du travail en Corée. Cela m'a encore plus motivé
-               à travailler dans mon domaine, qui est le développement.</p>
+               à travailler dans mon domaine : le développement</p>
             `,
     TIMELINE_TITLE_1: `Développeur Fullstack chez AtolCD`,
     TIMELINE_TEXT_1: `Travail sur plusieurs projets, au sein d'une équipe d'environ 10 personnes, utilisant plusieurs stacks différentes.
