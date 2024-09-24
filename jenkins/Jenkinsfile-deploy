@@ -10,16 +10,19 @@ pipeline {
         credentials(name: 'EC2_CREDENTIALS', defaultValue: 'credentials-ec2-user', description: 'SSH private key to access EC2')
     }
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'master', url: 'https://github.com/raph0222/vue-docker-jenkins-personal.git'
-            }
-        }
+        // stage('Checkout') {
+        //     steps {s
+        //         git branch: 'master', url: 'https://github.com/raph0222/vue-docker-jenkins-personal.git'
+        //     }
+        // }
         stage('Install Dependencies') {
             steps {
                 script {
                     docker.image(NODE_IMAGE).inside {
-                        sh 'npm install'
+                        sh '''
+                        cd front
+                        npm install
+                        '''
                     }
                 }
             }
@@ -28,7 +31,10 @@ pipeline {
             steps {
                 script {
                     docker.image(NODE_IMAGE).inside {
-                        sh 'npm run build'
+                        sh '''
+                        cd front
+                        npm run build
+                        '''
                     }
                 }
             }
@@ -37,7 +43,7 @@ pipeline {
             steps {
                 withCredentials([sshUserPrivateKey(credentialsId: 'EC2_CREDENTIALS', keyFileVariable: 'EC2_KEY')]) {
                     sh """
-                        scp -r ${WORKSPACE}/dist/* ${params.EC2_USER}@${params.EC2_HOST}:/var/www/html
+                        scp -r ${WORKSPACE}/front/dist/* ${params.EC2_USER}@${params.EC2_HOST}:/var/www/html
                     """
                 }
             }

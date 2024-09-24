@@ -3,8 +3,8 @@ version: '3.8'
 services:
   front:
     build:
-      context: ..
-      dockerfile: docker/Dockerfile
+      context: ../front
+      dockerfile: ../docker/Dockerfile
     env_file: .env
     networks:
       - front-network
@@ -12,7 +12,6 @@ services:
       - ../:/app
     ports:
       - 9992:9991
-    working_dir: /app
     environment:
       - TZ=Asia/Seoul
       - JAVA_OPTS=-Dhudson.plugins.git.GitSCM.ALLOW_LOCAL_CHECKOUT=true
