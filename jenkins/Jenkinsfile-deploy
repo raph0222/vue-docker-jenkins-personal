@@ -8,21 +8,22 @@ pipeline {
         string(name: 'EC2_HOST', defaultValue: 'ec2-3-25-103-142.ap-southeast-2.compute.amazonaws.com', description: 'EC2 instance hostname')
         //ssh key value has been added to jenkins credentials
         credentials(name: 'EC2_CREDENTIALS', defaultValue: 'credentials-ec2-user', description: 'SSH private key to access EC2')
+        string(name: 'BRANCH', defaultValue: 'master', description: 'branch to build on')
+        string(name: 'REPO', defaultValue: 'https://github.com/raph0222/vue-docker-jenkins-personal.git', description: 'repository to use')
     }
     stages {
-        // stage('Checkout') {
-        //     steps {s
-        //         git branch: 'master', url: 'https://github.com/raph0222/vue-docker-jenkins-personal.git'
-        //     }
-        // }
+        stage('Checkout') {
+            steps {
+                git branch: "${params.BRANCH}", url: "${params.REPO}"
+            }
+        }
         stage('Install Dependencies') {
             steps {
                 script {
                     docker.image(NODE_IMAGE).inside {
-                        sh '''
-                        cd front
-                        npm install
-                        '''
+                        dir('front') {
+                            sh 'npm install'
+                        }
                     }
                 }
             }
@@ -31,10 +32,9 @@ pipeline {
             steps {
                 script {
                     docker.image(NODE_IMAGE).inside {
-                        sh '''
-                        cd front
-                        npm run build
-                        '''
+                        dir('front') {
+                            sh 'npm run build'
+                        }
                     }
                 }
             }

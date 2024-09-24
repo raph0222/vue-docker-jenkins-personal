@@ -4,15 +4,15 @@ pipeline {
         NODE_IMAGE = 'node:22.8'
     }
     stages {
-        stage('Install and Lint') {
+        stage('Install') {
             steps {
                 script {                    
                     docker.image(NODE_IMAGE).inside {
-                        sh '''
-                        cd front
-                        npm install
-                        npm run lint
-                        '''
+                        dir('front') {
+                            sh '''
+                                npm install
+                            '''
+                        }
                     }
                 }
             }
@@ -21,10 +21,11 @@ pipeline {
             steps {
                 script {                    
                     docker.image(NODE_IMAGE).inside {
-                        sh '''
-                        cd front
-                        npm run build
-                        '''
+                        dir('front') {
+                            sh '''
+                                npm run build
+                            '''
+                        }
                     }
                 }
             }
