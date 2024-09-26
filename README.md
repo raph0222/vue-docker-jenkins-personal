@@ -16,9 +16,10 @@ docker-compose up -d --build
 ```
 
 ## Front
-For now, this is a front-end only app, so you can simply run :
+For now, this is a front-end only app, you will just need Node Version 22.8, and you can simply run :
 
 ```sh
+cd front
 npm install
 npm run dev
 ```
@@ -32,7 +33,7 @@ You can access jenkins from [http://localhost:8081/](http://localhost:8081/) It 
 
 **2 pipelines** :
 
-- review : Each time code needs to be merged, jenkins will be triggered, docker inside jenkins and check if the project can be : linted, built... (manual for now)
+- review : Each time code needs to be merged, jenkins will be triggered, docker inside jenkins to check the project format (eslint/prettier) before building.
 
 - deploy : get the code from github repo, docker inside jenkins to build the /dist. Send the build to an EC2 instance via ssh. Restart apache.
 
