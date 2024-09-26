@@ -11,7 +11,7 @@ export default defineComponent({
   name: 'FooterComponent',
   data() {
     return {
-      version: import.meta.env.VITE_APP_VERSION || ''
+      version: import.meta.env.VERSION || ''
     }
   },
   computed: {
