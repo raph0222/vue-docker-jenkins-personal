@@ -14,13 +14,12 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'DetailsComponent',
   data() {
-    return {
-    }
+    return {}
   },
   computed: {
     bioText() {
       return this.$t('BIO_TEXT')
-    },
-  },
+    }
+  }
 })
 </script>

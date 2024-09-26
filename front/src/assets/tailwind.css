@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'MesloLGL';
-    src: url('@/assets/fonts/MesloLGL-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-size: 15px;
-    line-height:1.725;
+  font-family: 'MesloLGL';
+  src: url('@/assets/fonts/MesloLGL-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.725;
 }
 
 body {
-    font-family: 'MesloLGL';
-    line-height: 1.725;
-    font-size: 15px;
-    line-height:1.725;
-    @apply text-white;
-    @apply bg-black;
+  font-family: 'MesloLGL';
+  line-height: 1.725;
+  font-size: 15px;
+  line-height: 1.725;
+  @apply text-white;
+  @apply bg-black;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
