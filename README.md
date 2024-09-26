@@ -1,6 +1,8 @@
 # READ ME
 
-This is a how-to-use file explaining the logic used in this project. This project development is still ongoing. Improvements and backend project will be done.
+Personal resume hosted on AWS EC2 instance : [https://raphael-rocha.xyz/](https://raphael-rocha.xyz/)
+
+This project development is still ongoing. Improvements and backend project will be done. 
 
 ## /Docker
 

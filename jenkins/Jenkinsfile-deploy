@@ -4,12 +4,10 @@ pipeline {
         NODE_IMAGE = 'node:22.8'
     }
     parameters {
-        string(name: 'EC2_USER', defaultValue: 'ec2-user', description: 'EC2 instance user')
-        string(name: 'EC2_HOST', defaultValue: 'ec2-3-25-103-142.ap-southeast-2.compute.amazonaws.com', description: 'EC2 instance hostname')
-        //ssh key value has been added to jenkins credentials
-        credentials(name: 'EC2_CREDENTIALS', defaultValue: 'credentials-ec2-user', description: 'SSH private key to access EC2')
         string(name: 'BRANCH', defaultValue: 'master', description: 'branch to build on')
-        string(name: 'REPO', defaultValue: 'https://github.com/raph0222/vue-docker-jenkins-personal.git', description: 'repository to use')
+        string(name: 'REPO', defaultValue: 'https://github.com/raph0222/vue-docker-jenkins-personal.git', description: 'repo to use')
+        // select server and will choose credentials accordingly
+        choice(name: 'SERVER_TO_DEPLOY', choices: ['ec2-instance', 'test-instance'], description: 'target server to deploy')
     }
     stages {
         stage('Checkout') {
@@ -39,21 +37,24 @@ pipeline {
                 }
             }
         }
-        stage('Deploy to EC2') {
+        stage('Deploy to EC2 & Restart Apache') {
             steps {
-                withCredentials([sshUserPrivateKey(credentialsId: 'EC2_CREDENTIALS', keyFileVariable: 'EC2_KEY')]) {
-                    sh """
-                        scp -r ${WORKSPACE}/front/dist/* ${params.EC2_USER}@${params.EC2_HOST}:/var/www/html
-                    """
-                }
-            }
-        }
-        stage('Restart Apache') {
-            steps {
-                withCredentials([sshUserPrivateKey(credentialsId: 'EC2_CREDENTIALS', keyFileVariable: 'EC2_KEY')]) {
-                    sh """
-                        ssh ${params.EC2_USER}@${params.EC2_HOST} 'sudo systemctl restart httpd'
-                    """
+                script {
+                    // pick up credentials ID values associated with the server
+                    def ec2HostCredentials = SERVER_TO_DEPLOY == 'ec2-instance' ? 'credentials-ec2-host' : 'credentials-test-host'
+                    def ec2KeyCredentials = SERVER_TO_DEPLOY == 'ec2-instance' ? 'credentials-ec2-ssh-key' : 'credentials-test-ssh-key'
+                    def ec2UserCredentials = SERVER_TO_DEPLOY == 'ec2-instance' ? 'credentials-ec2-user' : 'credentials-test-user'
+
+                    withCredentials([
+                        string(credentialsId: ec2HostCredentials, variable: 'EC2_HOST'),
+                        string(credentialsId: ec2UserCredentials, variable: 'EC2_USER'),
+                        sshUserPrivateKey(credentialsId: ec2KeyCredentials, keyFileVariable: 'EC2_KEY')
+                    ]) {
+                        sh """
+                            scp -r ${WORKSPACE}/front/dist/* ec2-user@${EC2_HOST}:/var/www/html
+                            ssh ${EC2_USER}@${EC2_HOST} 'sudo systemctl restart httpd'
+                        """
+                    }
                 }
             }
         }
