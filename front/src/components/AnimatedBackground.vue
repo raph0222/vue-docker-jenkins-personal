@@ -75,7 +75,7 @@ export default defineComponent({
 
       function animate() {
         requestAnimationFrame(animate)
-        cubes.forEach(cube => {
+        cubes.forEach((cube) => {
           cube.rotation.x += 0.01
           cube.rotation.y += 0.01
         })

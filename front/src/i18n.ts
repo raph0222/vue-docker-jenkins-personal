@@ -7,7 +7,7 @@ import ko from './locales/ko'
 const i18n = createI18n({
   locale: 'en',
   fallbackLocale: 'en',
-  messages: {en, fr, ko}
+  messages: { en, fr, ko }
 })
 
 export default i18n

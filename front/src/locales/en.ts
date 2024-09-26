@@ -38,7 +38,7 @@ const en: LocaleMessages = {
   TIMELINE_END_DATE_3: '2019-12',
   TIMELINE_TEXT_3: `Conception and Development : Web interface and back-office using Js/Jquery and PHP backend. Conception of PostgreSQL databases.`,
   TEXT_YEAR: 'year',
-  TEXT_MONTH: 'month',
+  TEXT_MONTH: 'month'
 }
 
 export default en

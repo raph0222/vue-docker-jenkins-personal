@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 
 export const useLanguageStore = defineStore('languageStore', {
   state: () => ({
-    currentLanguage: 'en',
+    currentLanguage: 'en'
   }),
   actions: {
     setLanguage(language: string) {
@@ -11,5 +11,5 @@ export const useLanguageStore = defineStore('languageStore', {
     isKorean() {
       return this.currentLanguage === 'ko'
     }
-  },
+  }
 })

@@ -4,7 +4,8 @@
       v-for="language in languages"
       :key="language"
       @click="changeLanguage(language)"
-      class="p-1 cursor-pointer border-none rounded bg-transparent">
+      class="p-1 cursor-pointer border-none rounded bg-transparent"
+    >
       <img :src="getLanguageImage(language)" :alt="language.toUpperCase()" class="w-8 h-auto" />
     </button>
   </div>
@@ -36,7 +37,7 @@ export default defineComponent({
     return {
       languages,
       changeLanguage,
-      getLanguageImage,
+      getLanguageImage
     }
   }
 })

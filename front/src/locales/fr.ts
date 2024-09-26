@@ -3,10 +3,10 @@ import type { LocaleMessages } from '@/types/localeMessages'
 
 // can have only same field than English, if there are missing fields => english value
 const fr: Partial<LocaleMessages> = {
-    USER_NAME: 'Raphael Rocha',
-    USER_POSITION: 'Développeur Fullstack',
-    USER_LOCATION: 'Séoul, Corée du Sud',
-    BIO_TEXT: `
+  USER_NAME: 'Raphael Rocha',
+  USER_POSITION: 'Développeur Fullstack',
+  USER_LOCATION: 'Séoul, Corée du Sud',
+  BIO_TEXT: `
               <p>Bonjour, je m'appelle Raphael, je suis un développeur fullstack junior né en France, vivant maintenant en Corée du Sud.</p>
               <p>J'ai plus d'un an d'expérience en tant que développeur. Je travaille actuellement sur des projets personnels, comme celui-ci, et 
               je prévois de travailler sur un projet orienté backend pour mon prochain projet.</p>
@@ -24,8 +24,8 @@ const fr: Partial<LocaleMessages> = {
               Cette expérience, même si elle est non liée à l'IT, m'a donné un aperçu de la culture du travail en Corée. Cela m'a encore plus motivé
                à travailler dans mon domaine : le développement</p>
             `,
-    TIMELINE_TITLE_1: `Développeur Fullstack chez AtolCD`,
-    TIMELINE_TEXT_1: `Travail sur plusieurs projets, au sein d'une équipe d'environ 10 personnes, utilisant plusieurs stacks différentes.
+  TIMELINE_TITLE_1: `Développeur Fullstack chez AtolCD`,
+  TIMELINE_TEXT_1: `Travail sur plusieurs projets, au sein d'une équipe d'environ 10 personnes, utilisant plusieurs stacks différentes.
                       Développement de fonctionnalités, correction de bugs, développement de logique métier, nouvelles 
                       API RESTFUL, webservices, fix de sécurité, captcha on-premise...
                       J'ai également travaillé sur des bases de données, en particulier PostgreSQL et l'extension PostGIS. 
@@ -34,16 +34,16 @@ const fr: Partial<LocaleMessages> = {
                       et docker-compose pour générer des packages, des bases de données...
                       Mise en place de serveurs de démo, mises à jour Java, nouveau processus de packaging et de déploiement, documentation, 
                       script Ansible pour configurer le serveur de démo.`,
-    TIMELINE_TITLE_2: `Développeur Web au Conseil Départemental de la Haute-Saône`,
-    TIMELINE_TEXT_2: `Conception et Développement : De manière similaire au précédent stage, j'ai réalisé les mêmes tâches pour un projet différent.`,
-    TIMELINE_TITLE_3: `Développeur Web au Conseil Départemental de la Haute-Saône`,
-    TIMELINE_TEXT_3: `Conception et Développement : Interface web et back-office utilisant Js/Jquery et un backend PHP. Conception de bases de données PostgreSQL.`,
-    // period text
-    TEXT_YEAR: 'an',
-    TEXT_MONTH: 'mois',
+  TIMELINE_TITLE_2: `Développeur Web au Conseil Départemental de la Haute-Saône`,
+  TIMELINE_TEXT_2: `Conception et Développement : De manière similaire au précédent stage, j'ai réalisé les mêmes tâches pour un projet différent.`,
+  TIMELINE_TITLE_3: `Développeur Web au Conseil Départemental de la Haute-Saône`,
+  TIMELINE_TEXT_3: `Conception et Développement : Interface web et back-office utilisant Js/Jquery et un backend PHP. Conception de bases de données PostgreSQL.`,
+  // period text
+  TEXT_YEAR: 'an',
+  TEXT_MONTH: 'mois'
 }
 
 //english default overwritten by fr
-const french = {...en, ...fr}
+const french = { ...en, ...fr }
 
 export default french

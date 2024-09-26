@@ -18,9 +18,8 @@ export default defineComponent({
     userName() {
       return this.$t('USER_NAME')
     }
-  },
+  }
 })
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

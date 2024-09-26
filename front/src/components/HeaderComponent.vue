@@ -1,12 +1,16 @@
 <template>
-  <section id="header-section" class="relative flex items-center justify-center overflow-hidden h-screen md:h-[700px]">
+  <section
+    id="header-section"
+    class="relative flex items-center justify-center overflow-hidden h-screen md:h-[700px]"
+  >
     <AnimatedBackground />
     <div class="flex items-center justify-center">
       <div class="w-24 h-24 rounded-full overflow-hidden">
         <img
           src="/pp.jpg"
           alt="Profile picture of {{ userName }}"
-          class="w-full h-full object-cover"/>
+          class="w-full h-full object-cover"
+        />
       </div>
       <div class="ml-6 text-left">
         <h1 class="text-2xl font-bold">{{ userName }}</h1>
@@ -14,11 +18,16 @@
       </div>
     </div>
   </section>
-  <hr>
+  <hr />
   <section id="contact-section">
-    <div id="infos-perso" class="flex flex-col lg:flex-row lg:gap-6 justify-center mb-10 w-full max-w-screen-lg">
+    <div
+      id="infos-perso"
+      class="flex flex-col lg:flex-row lg:gap-6 justify-center mb-10 w-full max-w-screen-lg"
+    >
       <p>{{ userLocation }}</p>
-      <p><a class="hover:underline" :href="'mailto:' + MAIL">{{ MAIL }}</a></p>
+      <p>
+        <a class="hover:underline" :href="'mailto:' + MAIL">{{ MAIL }}</a>
+      </p>
       <p><a class="hover:underline" :href="LINKEDIN_PROFILE" target="_blank">LinkedIn</a></p>
       <p><a class="hover:underline" :href="GITHUB_PROFILE" target="_blank">Github</a></p>
     </div>
@@ -50,11 +59,10 @@ export default defineComponent({
     return {
       MAIL: CONST.MAIL,
       LINKEDIN_PROFILE: CONST.LINKEDIN_PROFILE,
-      GITHUB_PROFILE: CONST.GITHUB_PROFILE,
+      GITHUB_PROFILE: CONST.GITHUB_PROFILE
     }
   }
 })
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
