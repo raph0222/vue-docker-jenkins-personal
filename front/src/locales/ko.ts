@@ -29,7 +29,8 @@ const ko: Partial<LocaleMessages> = {
   TIMELINE_TITLE_3: `오뜨손주 지방 정부 웹 개발자`,
   TIMELINE_TEXT_3: `기획 및 개발: JS/Jquery 및 PHP 백엔드를 사용하여 웹 인터페이스 및 백오피스 개발. PostgreSQL 데이터베이스 설계.`,
   TEXT_YEAR: `년`,
-  TEXT_MONTH: `월`
+  TEXT_MONTH: `월`,
+  DOWNLOAD_TEXT: `이력서`
 }
 
 //english default overwritten by fr

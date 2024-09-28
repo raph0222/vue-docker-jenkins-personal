@@ -22,7 +22,7 @@ const fr: Partial<LocaleMessages> = {
                selon moi.</p>
               <p>J'ai travaillé chez Manpower Korea pendant 6 mois (12/2022 - 06/2023) en tant que recruteur IT à temps partiel.
               Cette expérience, même si elle est non liée à l'IT, m'a donné un aperçu de la culture du travail en Corée. Cela m'a encore plus motivé
-               à travailler dans mon domaine : le développement</p>
+               à travailler dans mon domaine : le développement.</p>
             `,
   TIMELINE_TITLE_1: `Développeur Fullstack chez AtolCD`,
   TIMELINE_TEXT_1: `Travail sur plusieurs projets, au sein d'une équipe d'environ 10 personnes, utilisant plusieurs stacks différentes.
@@ -40,7 +40,8 @@ const fr: Partial<LocaleMessages> = {
   TIMELINE_TEXT_3: `Conception et Développement : Interface web et back-office utilisant Js/Jquery et un backend PHP. Conception de bases de données PostgreSQL.`,
   // period text
   TEXT_YEAR: 'an',
-  TEXT_MONTH: 'mois'
+  TEXT_MONTH: 'mois',
+  DOWNLOAD_TEXT: 'CV'
 }
 
 //english default overwritten by fr

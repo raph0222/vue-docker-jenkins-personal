@@ -17,4 +17,5 @@ export type LocaleMessages = {
   TIMELINE_TEXT_3: string
   TEXT_YEAR: string
   TEXT_MONTH: string
+  DOWNLOAD_TEXT: string
 }

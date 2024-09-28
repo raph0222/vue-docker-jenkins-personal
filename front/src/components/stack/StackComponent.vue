@@ -3,16 +3,18 @@
     <div class="flex flex-wrap gap-6">
       <SkillComponent
         title="Frontend"
-        :skills="['Vue.js', 'OpenLayers', 'Three.js', 'tailwind,bootstrap']"
+        :skills="['Vue.js', 'Three.js', 'Tailwind, Bootstrap', 'npm']"
       />
       <SkillComponent
         title="Backend"
-        :skills="['Spring, Jax-RS', 'Maven', 'JOOQ, Hibernate', 'REST API, webservices']"
+        :skills="['Spring, Jax-RS', 'JOOQ, Hibernate', 'REST API', 'Apache, Tomcat', 'Maven']"
       />
-      <SkillComponent title="Database" :skills="['PostgreSQL', 'PostGIS', 'Flyway']" />
-      <SkillComponent title="CI/CD" :skills="['Docker', 'Jenkins', 'Git,Gerrit/Github']" />
-      <SkillComponent title="Others" :skills="['Vagrant', 'Ansible']" />
-      <SkillComponent title="OS" :skills="['Ubuntu', 'CentOS']" />
+      <SkillComponent title="Database" :skills="['PostgreSQL', 'Flyway']" />
+      <SkillComponent title="CI/CD" :skills="['Docker', 'Jenkins', 'Git, Gerrit/Github']" />
+      <SkillComponent title="Cloud" :skills="['AWS']" />
+      <SkillComponent title="Geospatial" :skills="['Geoserver', 'PostGIS', 'OpenLayers']" />
+      <SkillComponent title="OS" :skills="['Ubuntu']" />
+      <SkillComponent title="More..." :skills="['Vagrant', 'Ansible', 'Postman']" />
     </div>
   </section>
 </template>
