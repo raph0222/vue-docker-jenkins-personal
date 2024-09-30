@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import CoverView from '@/views/CoverView.vue'
+import NotFoundPage from '@/views/NotFoundPage.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -14,6 +15,17 @@ const router = createRouter({
       path: '/cover',
       name: 'cover',
       component: CoverView
+    },
+    {
+      path: '/404',
+      name: 'NotFoundPage',
+      component: NotFoundPage
+    },
+    {
+      path: '/:catchAll(.*)',
+      redirect: (to) => {
+        return { path: '/404', query: { from: to.fullPath } }
+      }
     }
   ]
 })
