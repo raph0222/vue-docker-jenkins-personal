@@ -1,6 +1,6 @@
 # READ ME
 
-Personal resume hosted on AWS EC2 instance : [https://raphael-rocha.xyz/](https://raphael-rocha.xyz/)
+Personal resume hosted on AWS EC2 instance (*It has stopped temporarily and requires content updates.*): [https://raphael-rocha.xyz/](https://raphael-rocha.xyz/)
 
 This project development is still ongoing. Improvements and backend project will be done. 
 
