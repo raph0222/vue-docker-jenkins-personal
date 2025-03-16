@@ -7,23 +7,28 @@ const fr: Partial<LocaleMessages> = {
   USER_POSITION: 'Développeur Fullstack',
   USER_LOCATION: 'Séoul, Corée du Sud',
   BIO_TEXT: `
-              <p>Bonjour, je m'appelle Raphael, je suis un développeur fullstack junior né en France, vivant maintenant en Corée du Sud.</p>
-              <p>J'ai plus d'un an d'expérience en tant que développeur. Je travaille actuellement sur des projets personnels, comme celui-ci, et 
-              je prévois de travailler sur un projet orienté backend pour mon prochain projet.</p>
-              <p>J'ai vécu un an en Corée de mai 2022 à mai 2023, puis je suis rentré en France, où j'ai travaillé plus d'un an jusqu'en juillet 2024
-               en tant que développeur fullstack chez AtolCD (Dijon).
-              Maintenant, je suis de retour en Corée pour y poursuivre ma carrière. Mon objectif à moyen/long terme est de m'installer à Séoul, 
-              c'est pourquoi j'apprends actuellement le coréen à l'Université Chung-Ang (Programme de langue coréenne) avec un visa D-4, tout en recherchant 
-              un poste de développeur fullstack.</p>
-              <p>Être développeur est un poste vraiment intéressant pour moi. Chaque jour, j'apprends de nouvelles choses, de nouvelles pratiques, 
-              et c'est toujours un challenge de
-              produire du clean code, d'utiliser de bonnes pratiques, et de rester à jour avec les nouvelles sorties.
-              Chaque jour, je partage des connaissances et surtout, je reçois du feedback pour améliorer ce que je fais. C'est l'un des meilleurs aspects,
-               selon moi.</p>
-              <p>J'ai travaillé chez Manpower Korea pendant 6 mois (12/2022 - 06/2023) en tant que recruteur IT à temps partiel.
-              Cette expérience, même si elle est non liée à l'IT, m'a donné un aperçu de la culture du travail en Corée. Cela m'a encore plus motivé
-               à travailler dans mon domaine : le développement.</p>
-            `,
+    <p>Bonjour, je m'appelle Raphael, un développeur fullstack junior né en France et travaillant actuellement en Corée du Sud.</p>
+    <p>J'ai 2 ans d'expérience en tant que développeur. Je travaille actuellement comme développeur fullstack chez PhyxUp Health.</p>
+    <p>Mes principaux centres d'intérêt sont le développement backend, les pratiques DevOps et le Cloud. 
+    J'ai également réalisé beaucoup de développement frontend. J'ai le plus d'expérience avec Vue et Spring, 
+    et j'ai aussi travaillé avec Django. Ces derniers temps, je travaille beaucoup avec Vue, Django, 
+    les workflows CI/CD, Docker, les services AWS et Cloudflare.</p>
+    <p>Être développeur est un rôle vraiment épanouissant pour moi, car c'est un métier où je peux apprendre et progresser chaque jour. 
+    Faire fonctionner un software n'est que la base : j'essaie toujours de comprendre en profondeur comment il fonctionne, 
+    de suivre les bonnes pratiques et de prendre des décisions réfléchies pour que le code que je produis soit propre, efficace 
+    et facile à comprendre.</p>
+    <p>Je tiens également à construire des systèmes bien structurés et bien documentés, faciles à maintenir et à faire évoluer pour toute l'équipe. 
+    Il vaut mieux prendre le temps d'établir une structure et une logique pour éviter une dette technique qui ralentira tout le monde plus tard.
+    Maintenant que l'IA est disponible et performante, contrairement à l'époque où j'ai commencé à coder, nous devons en tirer pleinement parti pour gagner du temps.
+    C'est un outil puissant qui peut considérablement améliorer la productivité s'il est utilisé intelligemment.
+    Cela dit, investir du temps dès le départ pour éviter un code brouillon et une dette technique reste essentiel.</p>`,
+  TIMELINE_TITLE_0: `Developpeur Fullstack chez PhyxupHealth`,
+  TIMELINE_START_DATE_0: '2025-02',
+  TIMELINE_END_DATE_0: '',
+  TIMELINE_TEXT_0: `Développement sur le frontend et le backend avec Vue et Django (DRF). Ajout de nouvelles fonctionnalités, d'API endpoints, travail sur l'authentification, les logs, refactor du legacy code, gestion de la conformité avec HIPAA et FHIR.
+                    Travail avec PostgreSQL sur notre base de données hébergée sur RDS. Amélioration des processus CI/CD, des workflows et de la documentation pour l’équipe, en utilisant GitHub Actions pour le backend et Cloudflare Pages pour le frontend.
+                    Mise en place d’un nouvel environnement de staging (et de son deploiement) avec AWS comme hébergeur et Cloudflare pour la gestion de la résolution DNS. Utilisation de Docker pour gérer tous les services de l’application.
+                    Améliorations de sécurité, logging, etc.`,
   TIMELINE_TITLE_1: `Développeur Fullstack chez AtolCD`,
   TIMELINE_TEXT_1: `Travail sur plusieurs projets, au sein d'une équipe d'environ 10 personnes, utilisant plusieurs stacks différentes.
                       Développement de fonctionnalités, correction de bugs, développement de logique métier, nouvelles 
@@ -41,7 +46,8 @@ const fr: Partial<LocaleMessages> = {
   // period text
   TEXT_YEAR: 'an',
   TEXT_MONTH: 'mois',
-  DOWNLOAD_TEXT: 'CV'
+  DOWNLOAD_TEXT: 'CV',
+  TIMELINE_CURRENT: 'Actuellement'
 }
 
 //english default overwritten by fr

@@ -3,10 +3,17 @@
     <h1 class="text-blue-light font-bold mb-2">Experience</h1>
     <div class="">
       <TimelineField
+        :title="timeline0.title"
+        :textField="timeline0.text"
+        :startDate="timeline0.startDate"
+        :endDate="timeline0.endDate"
+      ></TimelineField>
+      <TimelineField
         :title="timeline1.title"
         :textField="timeline1.text"
         :startDate="timeline1.startDate"
         :endDate="timeline1.endDate"
+        :rightPosition="true"
       >
       </TimelineField>
       <TimelineField
@@ -14,7 +21,6 @@
         :textField="timeline2.text"
         :startDate="timeline2.startDate"
         :endDate="timeline2.endDate"
-        :rightPosition="true"
       >
       </TimelineField>
       <TimelineField
@@ -22,6 +28,7 @@
         :textField="timeline3.text"
         :startDate="timeline3.startDate"
         :endDate="timeline3.endDate"
+        :rightPosition="true"
       >
       </TimelineField>
     </div>
@@ -38,6 +45,14 @@ export default defineComponent({
     TimelineField
   },
   computed: {
+    timeline0() {
+      return {
+        title: this.$t('TIMELINE_TITLE_0'),
+        text: this.$t('TIMELINE_TEXT_0'),
+        startDate: this.$t('TIMELINE_START_DATE_0'),
+        endDate: this.$t('TIMELINE_END_DATE_0')
+      }
+    },
     timeline1() {
       return {
         title: this.$t('TIMELINE_TITLE_1'),

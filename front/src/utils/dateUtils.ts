@@ -3,6 +3,10 @@ import { useLanguageStore } from '@/stores/useLanguageStore'
 
 function getPeriodFromDateString(start: string, end: string): string {
   try {
+    // still working
+    if (!end) {
+      return ''
+    }
     const startDate = new Date(start)
     const endDate = new Date(end)
 
@@ -50,6 +54,11 @@ function getPeriodOrthograph(value: number, word: string): string {
 }
 
 function toStringYearMonthDate(date: string): string {
+  const { t } = useI18n()
+  if (date === '') {
+    return t('TIMELINE_CURRENT')
+  }
+
   const convertedDate = new Date(date).getTime()
   if (isNaN(convertedDate)) {
     console.error('Date format error on : ', date)

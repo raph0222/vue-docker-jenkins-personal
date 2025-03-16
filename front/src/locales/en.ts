@@ -6,19 +6,24 @@ const en: LocaleMessages = {
   USER_POSITION: 'Fullstack Developer',
   USER_LOCATION: 'Seoul, South Korea',
   BIO_TEXT: `
-            <p>Hello, I'm Raphael, a junior fullstack developer born in France, now living in South Korea.</p>
-            <p>I have more than a year of experience as a developer. I'm currently working on personal projects, 
-            including this one, and my next project will focus on backend development.</p>
-            <p>I lived one year in Korea from May 2022 to May 2023. After returning to France, I worked as a fullstack developer 
-            at AtolCD (Dijon) for over a year, until July 2024.
-            Now, I'm back to Korea to pursue a career here. My plan is to live in Seoul, which is why I'm currently learning Korean at Chung-Ang University 
-            (Korean Language Program) with a D-4 visa, while looking for 
-            a position as a fullstack developer.</p>
-            <p>Being a developer is a really fulfulling position for me.
-            Every day, you learn something new, whether it's new techniques, best practices, or staying updated with the latest advancements.</p>
-            <p> I worked at Manpower Korea for 6 months (12/2022 - 06-2023) as a part-time IT recruiter. Although not directly related to IT development, 
-            this experience gave me insight into Korean work culture and further fueled my desire to work in my field: software development.</p>
-          `,
+            <p>Hello, I'm Raphael, a junior fullstack developer born in France, now working in South Korea.</p>
+            <p>I have 2 years~ of experience as a developer. I'm currently working as a fullstack developer in PhyxUp Health.</p>
+            <p> My main interests are backend development, DevOps practices and Cloud. I also did a lot of front development.
+            I have the most experience in Vue and Spring. I also have experience working with Django. These days, I've been working a lot with Vue, Django,
+            CI/CD workflows, Docker, AWS services and Cloudflare.</p>
+            <p>Being a developer is a truly fulfilling role for me, as it's a role where I get to learn and grow everyday. 
+            Making software work is just the baseline, I always try to understand how it works in depth, and follow best practices and make thoughtful decisions to ensure the code I produce is clean, efficient, 
+            and easy to understand.</p><p>I also really care about building
+            well-structured and well-documented systems that are easy to maintain and scale for the whole team.
+            Now that AI is available and very efficient, unlike when I started coding, we should take full advantage of it to save time. It's a powerful tool that can greatly boost productivity if used wisely. Still, investing time upfront to avoid messy code and technical debt remains essential.</p>`,
+  TIMELINE_TITLE_0: `Fullstack Developer at PhyxupHealth`,
+  TIMELINE_START_DATE_0: '2025-02',
+  TIMELINE_END_DATE_0: '',
+  TIMELINE_TEXT_0: `Development on both front and backend with Vue and Django (DRF). Adding features, RESTful API endpoints, improving code quality of legacy code, refactoring with better structure/performance, security improvements, worked on authentication, roles/permissions, logging, handling compliance with HIPAA and FHIR.
+                    I worked with PostgreSQL on our database (RDS). Improve the CI/CD processes workflows for backend and frontend, handled packaging, release and versioning for our mobile app for iOS and Android using Github Actions for backend 
+                    and Cloudflare Pages for the front. Used Github Actions/Codemagic for mobile. I have set up a whole new staging environment (and deployment process, git flow) with AWS as the hosting provider 
+                    and Cloudflare managing the DNS resolution. Also working a lot with Docker to manage all services used inside the app.
+                    `,
   TIMELINE_TITLE_1: `Fullstack Developer at AtolCD`,
   TIMELINE_START_DATE_1: '2023-06',
   TIMELINE_END_DATE_1: '2024-07',
@@ -38,7 +43,8 @@ const en: LocaleMessages = {
   TIMELINE_TEXT_3: `Conception and Development : Web interface and back-office using Js/Jquery and PHP backend. Conception of PostgreSQL databases.`,
   TEXT_YEAR: 'year',
   TEXT_MONTH: 'month',
-  DOWNLOAD_TEXT: ' Resume'
+  DOWNLOAD_TEXT: ' Resume',
+  TIMELINE_CURRENT: 'Current'
 }
 
 export default en

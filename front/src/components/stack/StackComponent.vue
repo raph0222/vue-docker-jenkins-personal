@@ -7,14 +7,46 @@
       />
       <SkillComponent
         title="Backend"
-        :skills="['Spring, Jax-RS', 'JOOQ, Hibernate', 'REST API', 'Apache, Tomcat', 'Maven']"
+        :skills="[
+          'Spring, Jax-RS',
+          'JOOQ, Hibernate',
+          'Django (DRF)',
+          'REST API',
+          'Soketi',
+          'Apache, Tomcat',
+          'Maven'
+        ]"
       />
       <SkillComponent title="Database" :skills="['PostgreSQL', 'Flyway']" />
-      <SkillComponent title="CI/CD" :skills="['Docker', 'Jenkins', 'Git, Gerrit/Github']" />
-      <SkillComponent title="Cloud" :skills="['AWS']" />
-      <SkillComponent title="Geospatial" :skills="['Geoserver', 'PostGIS', 'OpenLayers']" />
+      <SkillComponent
+        title="CI/CD"
+        :skills="['Docker', 'Jenkins', 'Git (Gerrit, Github, Github Actions)']"
+      />
+      <SkillComponent
+        title="Cloud"
+        :categories="[
+          {
+            title: 'AWS',
+            skills: [
+              'EC2',
+              'RDS',
+              'ECR',
+              'S3',
+              'Registrar',
+              'Load Balancer',
+              'Route 53',
+              'Certificates...'
+            ]
+          },
+          { title: 'Cloudflare', skills: ['DNS', 'Workers/Pages...'] }
+        ]"
+      />
       <SkillComponent title="OS" :skills="['Ubuntu']" />
-      <SkillComponent title="More..." :skills="['Vagrant', 'Ansible', 'Postman']" />
+      <SkillComponent title="Geospatial" :skills="['Geoserver', 'PostGIS', 'OpenLayers']" />
+      <SkillComponent
+        title="More..."
+        :skills="['DBeaver', 'Ansible', 'Postman', 'Vagrant', 'Sublime Merge']"
+      />
     </div>
   </section>
 </template>

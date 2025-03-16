@@ -3,6 +3,10 @@ export type LocaleMessages = {
   USER_POSITION: string
   USER_LOCATION: string
   BIO_TEXT: string
+  TIMELINE_TITLE_0: string
+  TIMELINE_START_DATE_0: string
+  TIMELINE_END_DATE_0: string
+  TIMELINE_TEXT_0: string
   TIMELINE_TITLE_1: string
   TIMELINE_START_DATE_1: string
   TIMELINE_END_DATE_1: string
@@ -18,4 +22,5 @@ export type LocaleMessages = {
   TEXT_YEAR: string
   TEXT_MONTH: string
   DOWNLOAD_TEXT: string
+  TIMELINE_CURRENT: string
 }

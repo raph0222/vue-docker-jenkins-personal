@@ -1,6 +1,6 @@
 <template>
   <footer class="footer text-center py-5">
-    <p>&copy; 2024 {{ userName }}. All rights reserved. - {{ version }}</p>
+    <p>&copy; 2025 {{ userName }}. All rights reserved. - {{ version }}</p>
   </footer>
 </template>
 
