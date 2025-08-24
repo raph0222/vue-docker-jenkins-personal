@@ -3,20 +3,20 @@ import type { LocaleMessages } from '@/types/localeMessages'
 
 const en: LocaleMessages = {
   USER_NAME: 'Raphael Rocha',
-  USER_POSITION: 'Fullstack Developer',
+  USER_POSITION: 'Fullstack Engineer',
   USER_LOCATION: 'Seoul, South Korea',
   BIO_TEXT: `
-            <p>Hello, I'm Raphael, a junior fullstack developer born in France, now working in South Korea.</p>
-            <p>I have 2 years~ of experience as a developer. I'm currently working as a fullstack developer in PhyxUp Health.</p>
+            <p>Hello, I'm Raphael, a junior fullstack engineer born in France, now working in South Korea.</p>
+            <p>I have 2 years~ of experience as a developer. I'm currently working as a fullstack engineer in PhyxUp Health.</p>
             <p> My main interests are backend development, DevOps practices and Cloud. I also did a lot of front development.
             I have the most experience in Vue and Spring. I also have experience working with Django. These days, I've been working a lot with Vue, Django,
             CI/CD workflows, Docker, AWS services and Cloudflare.</p>
-            <p>Being a developer is a truly fulfilling role for me, as it's a role where I get to learn and grow everyday. 
-            Making software work is just the baseline, I always try to understand how it works in depth, and follow best practices and make thoughtful decisions to ensure the code I produce is clean, efficient, 
+            <p>Being a software engineer is a truly fulfilling role for me, as it's a role where I get to learn and grow everyday. 
+            Making software work is just the baseline, I always try to understand how it works in depth, follow best practices and make thoughtful decisions to ensure the code I produce is clean, efficient, 
             and easy to understand.</p><p>I also really care about building
             well-structured and well-documented systems that are easy to maintain and scale for the whole team.
             Now that AI is available and very efficient, unlike when I started coding, we should take full advantage of it to save time. It's a powerful tool that can greatly boost productivity if used wisely. Still, investing time upfront to avoid messy code and technical debt remains essential.</p>`,
-  TIMELINE_TITLE_0: `Fullstack Developer at PhyxupHealth`,
+  TIMELINE_TITLE_0: `Fullstack Engineer at PhyxupHealth`,
   TIMELINE_START_DATE_0: '2025-02',
   TIMELINE_END_DATE_0: '',
   TIMELINE_TEXT_0: `Development on both front and backend with Vue and Django (DRF). Adding features, RESTful API endpoints, improving code quality of legacy code, refactoring with better structure/performance, security improvements, worked on authentication, roles/permissions, logging, handling compliance with HIPAA and FHIR.
@@ -24,7 +24,7 @@ const en: LocaleMessages = {
                     and Cloudflare Pages for the front. Used Github Actions/Codemagic for mobile. I have set up a whole new staging environment (and deployment process, git flow) with AWS as the hosting provider 
                     and Cloudflare managing the DNS resolution. Also working a lot with Docker to manage all services used inside the app.
                     `,
-  TIMELINE_TITLE_1: `Fullstack Developer at AtolCD`,
+  TIMELINE_TITLE_1: `Fullstack Engineer at AtolCD`,
   TIMELINE_START_DATE_1: '2023-06',
   TIMELINE_END_DATE_1: '2024-07',
   TIMELINE_TEXT_1: `Working on multiple projects, in a team of 10~ people, multiple different stacks.
