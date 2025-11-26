@@ -2,7 +2,14 @@ export type LocaleMessages = {
   USER_NAME: string
   USER_POSITION: string
   USER_LOCATION: string
-  BIO_TEXT: string
+  BIO_TEXT_INTRO: string
+  BIO_TEXT_EXPERTISE: string
+  BIO_TEXT_BULLET_1: string
+  BIO_TEXT_BULLET_2: string
+  BIO_TEXT_BULLET_3: string
+  BIO_TEXT_BULLET_4: string
+  BIO_TEXT_BULLET_5: string
+  BIO_TEXT_CONCLUSION: string
   TIMELINE_TITLE_0: string
   TIMELINE_START_DATE_0: string
   TIMELINE_END_DATE_0: string

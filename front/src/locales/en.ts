@@ -5,18 +5,15 @@ const en: LocaleMessages = {
   USER_NAME: 'Raphael Rocha',
   USER_POSITION: 'Fullstack Engineer',
   USER_LOCATION: 'Seoul, South Korea',
-  BIO_TEXT: `
-            <p>Hello, I'm Raphael, a junior fullstack engineer born in France, now working in South Korea.</p>
-            <p>I have 2 years~ of experience as a developer. I'm currently working as a fullstack engineer in PhyxUp Health.</p>
-            <p> My main interests are backend development, DevOps practices and Cloud. I also did a lot of front development.
-            I have the most experience in Vue and Spring. I also have experience working with Django. These days, I've been working a lot with Vue, Django,
-            CI/CD workflows, Docker, AWS services and Cloudflare.</p>
-            <p>Being a software engineer is a truly fulfilling role for me, as it's a role where I get to learn and grow everyday. 
-            Making software work is just the baseline, I always try to understand how it works in depth, follow best practices and make thoughtful decisions to ensure the code I produce is clean, efficient, 
-            and easy to understand.</p><p>I also really care about building
-            well-structured and well-documented systems that are easy to maintain and scale for the whole team.
-            Now that AI is available and very efficient, unlike when I started coding, we should take full advantage of it to save time. It's a powerful tool that can greatly boost productivity if used wisely. Still, investing time upfront to avoid messy code and technical debt remains essential.</p>`,
-  TIMELINE_TITLE_0: `Fullstack Engineer at PhyxupHealth`,
+  BIO_TEXT_INTRO: `French software engineer living/working in South Korea with 2 years of experience as a developer. I'm currently working as a fullstack engineer at PhyxUp Health, based in Seoul, Mapo-gu.`,
+  BIO_TEXT_EXPERTISE: `Area of expertise:`,
+  BIO_TEXT_BULLET_1: 'Backend: Java / Spring, Python / Django (DRF)',
+  BIO_TEXT_BULLET_2: 'Frontend: Vue.js, Vuex, Tailwind',
+  BIO_TEXT_BULLET_3: 'DevOps: Docker, Git, Github, Gerrit',
+  BIO_TEXT_BULLET_4: 'Cloud & Networking: AWS, Cloudflare',
+  BIO_TEXT_BULLET_5: 'Database: PostgreSQL',
+  BIO_TEXT_CONCLUSION: `Software engineering is deeply stimulating to me because it allows me to learn continuously while solving meaningful problems. I follow strong engineering principles and make sure the requirements are clearly understood, so that every decision contributes to clean, efficient, and maintainable solutions. Beyond making software work, I focus on building systems that reduce technical debt, improve reliability, and scale with the needs of the product.`,
+  TIMELINE_TITLE_0: `Fullstack Engineer at PhyxUp Health`,
   TIMELINE_START_DATE_0: '2025-02',
   TIMELINE_END_DATE_0: '',
   TIMELINE_TEXT_0: `Development on both front and backend with Vue and Django (DRF). Adding features, RESTful API endpoints, improving code quality of legacy code, refactoring with better structure/performance, security improvements, worked on authentication, roles/permissions, logging, handling compliance with HIPAA and FHIR.
