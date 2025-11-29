@@ -39,6 +39,12 @@ const ko: Partial<LocaleMessages> = {
   TEXT_YEAR: `년`,
   TEXT_MONTH: `월`,
   DOWNLOAD_TEXT: `이력서`,
+  EDUCATION_TITLE: '학력',
+  EDUCATION_SCHOOL: 'University Marie & Louis Pasteur (UMLP)',
+  EDUCATION_DEGREE: '컴퓨터공학 학사',
+  EDUCATION_LOCATION: '프랑스',
+  EDUCATION_GRAD_LABEL: '졸업:',
+  EDUCATION_GRAD_YEAR: '2021',
   TIMELINE_CURRENT: '현재'
 }
 

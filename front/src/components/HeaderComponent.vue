@@ -26,7 +26,7 @@
       </p>
       <p><a class="hover:underline" :href="LINKEDIN_PROFILE" target="_blank">LinkedIn</a></p>
       <p><a class="hover:underline" :href="GITHUB_PROFILE" target="_blank">Github</a></p>
-      <p><DownloadButton /></p>
+      <p><DownloadButton class="hover:underline" /></p>
     </div>
   </section>
 </template>

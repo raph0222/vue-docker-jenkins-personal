@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import DetailsComponent from '@/components/DetailsComponent.vue'
+import EducationComponent from '@/components/EducationComponent.vue'
 import StackComponent from '@/components/stack/StackComponent.vue'
 import ExperienceComponent from '@/components/timeline/ExperienceComponent.vue'
 import MenuBar from '@/components/menubar/MenuBar.vue'
@@ -17,6 +18,7 @@ import LanguageComponent from '@/components/LanguageComponent.vue'
       <LanguageComponent />
       <HeaderComponent />
       <DetailsComponent />
+      <EducationComponent />
       <ExperienceComponent />
       <StackComponent />
     </div>

@@ -40,7 +40,13 @@ const en: LocaleMessages = {
   TIMELINE_TEXT_3: `Conception and Development : Web interface and back-office using Js/Jquery and PHP backend. Conception of PostgreSQL databases.`,
   TEXT_YEAR: 'year',
   TEXT_MONTH: 'month',
-  DOWNLOAD_TEXT: ' Resume',
+  DOWNLOAD_TEXT: 'Resume',
+  EDUCATION_TITLE: 'Education',
+  EDUCATION_SCHOOL: 'University Marie & Louis Pasteur (UMLP)',
+  EDUCATION_DEGREE: "Bachelor's Degree - Computer Science",
+  EDUCATION_LOCATION: 'Belfort, France',
+  EDUCATION_GRAD_LABEL: 'Graduation:',
+  EDUCATION_GRAD_YEAR: '2021',
   TIMELINE_CURRENT: 'Current'
 }
 

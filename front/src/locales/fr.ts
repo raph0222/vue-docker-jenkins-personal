@@ -39,6 +39,12 @@ const fr: Partial<LocaleMessages> = {
   TEXT_YEAR: 'an',
   TEXT_MONTH: 'mois',
   DOWNLOAD_TEXT: 'CV',
+  EDUCATION_TITLE: 'Formation',
+  EDUCATION_SCHOOL: 'Université Marie et Louis Pasteur (UMLP)',
+  EDUCATION_DEGREE: 'Licence - Informatique',
+  EDUCATION_LOCATION: 'Belfort, France',
+  EDUCATION_GRAD_LABEL: 'Diplômé :',
+  EDUCATION_GRAD_YEAR: '2021',
   TIMELINE_CURRENT: 'Actuellement'
 }
 

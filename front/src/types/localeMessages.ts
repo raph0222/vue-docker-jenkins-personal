@@ -29,5 +29,11 @@ export type LocaleMessages = {
   TEXT_YEAR: string
   TEXT_MONTH: string
   DOWNLOAD_TEXT: string
+  EDUCATION_TITLE: string
+  EDUCATION_SCHOOL: string
+  EDUCATION_DEGREE: string
+  EDUCATION_LOCATION: string
+  EDUCATION_GRAD_LABEL: string
+  EDUCATION_GRAD_YEAR: string
   TIMELINE_CURRENT: string
 }

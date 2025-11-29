@@ -7,6 +7,7 @@
       <ul class="flex flex-col">
         <li><TitleMenuBar title="Contact" sectionRef="#contact-section" /></li>
         <li><TitleMenuBar title="Bio" sectionRef="#details-section" /></li>
+        <li><TitleMenuBar title="Education" sectionRef="#education-section" /></li>
         <li><TitleMenuBar title="Experience" sectionRef="#experience-section" /></li>
         <li><TitleMenuBar title="Stack" sectionRef="#stack-section" /></li>
       </ul>
@@ -19,6 +20,7 @@
       <ul v-show="isMenuVisible" class="flex justify-around py-2">
         <li><TitleMenuBar title="Contact" sectionRef="#contact-section" /></li>
         <li><TitleMenuBar title="Bio" sectionRef="#details-section" /></li>
+        <li><TitleMenuBar title="Education" sectionRef="#education-section" /></li>
         <li><TitleMenuBar title="Experience" sectionRef="#experience-section" /></li>
         <li><TitleMenuBar title="Stack" sectionRef="#stack-section" /></li>
       </ul>

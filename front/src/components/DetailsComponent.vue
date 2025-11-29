@@ -1,5 +1,5 @@
 <template>
-  <section id="details-section" class="mb-20">
+  <section id="details-section" class="">
     <div class="space-y-6 text-base leading-relaxed text-justify">
       <p class="font-medium">
         {{ bioIntro }}
