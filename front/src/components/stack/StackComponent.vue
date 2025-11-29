@@ -1,66 +1,97 @@
 <template>
-  <section id="stack-section" class="p-6 mb-20">
-    <div class="flex flex-wrap gap-6">
-      <SkillComponent
-        title="Frontend"
-        :skills="['Vue.js', 'Three.js', 'Tailwind, Bootstrap', 'npm']"
-      />
-      <SkillComponent
-        title="Backend"
-        :skills="[
-          'Spring, Jax-RS',
-          'JOOQ, Hibernate',
-          'Django (DRF)',
-          'REST API',
-          'Soketi',
-          'Apache, Tomcat',
-          'Maven'
-        ]"
-      />
-      <SkillComponent title="Database" :skills="['PostgreSQL', 'Flyway']" />
-      <SkillComponent
-        title="CI/CD"
-        :skills="['Docker', 'Jenkins', 'Git (Gerrit, Github, Github Actions)']"
-      />
-      <SkillComponent
-        title="Cloud"
-        :categories="[
-          {
-            title: 'AWS',
-            skills: [
-              'EC2',
-              'RDS',
-              'ECR',
-              'S3',
-              'Registrar',
-              'Load Balancer',
-              'Route 53',
-              'Certificates...'
-            ]
-          },
-          { title: 'Cloudflare', skills: ['DNS', 'Workers/Pages...'] }
-        ]"
-      />
-      <SkillComponent title="OS" :skills="['Ubuntu']" />
-      <SkillComponent title="Geospatial" :skills="['Geoserver', 'PostGIS', 'OpenLayers']" />
-      <SkillComponent
-        title="More..."
-        :skills="['DBeaver', 'Ansible', 'Postman', 'Vagrant', 'Sublime Merge']"
-      />
+  <section id="stack-section" class="py-8 sm:py-16">
+    <div class="max-w-5xl mx-auto space-y-10">
+      <div class="space-y-2">
+        <p class="text-xl uppercase tracking-[0.35em] font-semibold text-white">Stack Overview</p>
+      </div>
+
+      <ul class="space-y-8 sm:space-y-6">
+        <li
+          v-for="category in stack"
+          :key="category.title"
+          class="flex flex-col gap-1 text-white md:flex-row md:items-baseline md:gap-6"
+        >
+          <span class="text-sm uppercase tracking-[0.1em] sm:tracking-[0.2em] font-semibold">
+            {{ category.title }}
+          </span>
+          <p class="leading-[1.5] sm:leading-relaxed">
+            <span v-for="(skill, index) in category.skills" :key="`${category.title}-${skill}`">
+              {{ skill
+              }}<span
+                v-if="index !== category.skills.length - 1"
+                class="px-2 font-light"
+                aria-hidden="true"
+                >/</span
+              >
+            </span>
+          </p>
+        </li>
+      </ul>
     </div>
   </section>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import SkillComponent from '@/components/stack/SkillComponent.vue'
+
+type StackCategory = {
+  title: string
+  skills: string[]
+}
+
+const stack: StackCategory[] = [
+  {
+    title: 'Frontend',
+    skills: ['Vue.js', 'Three.js', 'Tailwind CSS', 'Bootstrap', 'npm']
+  },
+  {
+    title: 'Backend',
+    skills: [
+      'Spring',
+      'JAX-RS',
+      'JOOQ',
+      'Hibernate',
+      'Django (DRF)',
+      'REST API',
+      'Soketi',
+      'Apache',
+      'Tomcat',
+      'Maven'
+    ]
+  },
+  {
+    title: 'Database',
+    skills: ['PostgreSQL', 'Flyway']
+  },
+  {
+    title: 'CI/CD',
+    skills: ['Docker', 'Jenkins', 'Git', 'Gerrit', 'GitHub', 'GitHub Actions']
+  },
+  {
+    title: 'Cloud',
+    skills: [
+      'AWS (EC2, RDS, ECR, S3, Route 53, Certificates, Load Balancer, Registrar)',
+      'Cloudflare (DNS, Workers, Pages)'
+    ]
+  },
+  {
+    title: 'OS',
+    skills: ['Ubuntu']
+  },
+  {
+    title: 'Geospatial',
+    skills: ['Geoserver', 'PostGIS', 'OpenLayers']
+  },
+  {
+    title: 'More',
+    skills: ['DBeaver', 'Ansible', 'Postman', 'Vagrant', 'Sublime Merge']
+  }
+]
 
 export default defineComponent({
   name: 'StackComponent',
-  components: {
-    SkillComponent
+  setup() {
+    return { stack }
   }
 })
 </script>
-
-<style scoped></style>

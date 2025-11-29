@@ -20,7 +20,7 @@
       id="infos-perso"
       class="flex flex-col lg:flex-row lg:gap-6 justify-center mb-10 w-full max-w-screen-lg"
     >
-      <p>&#127968; {{ userLocation }}</p>
+      <p>{{ userLocation }}</p>
       <p>
         <a class="hover:underline" :href="'mailto:' + MAIL">{{ MAIL }}</a>
       </p>

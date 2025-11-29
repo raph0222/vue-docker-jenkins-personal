@@ -1,7 +1,7 @@
 <template>
   <section id="experience-section">
-    <h1 class="text-blue-light font-bold mb-2">Experience</h1>
-    <div class="">
+    <h1 class="text-xl uppercase tracking-[0.35em] font-semibold text-white">Experience</h1>
+    <div class="mt-8">
       <TimelineField
         :title="timeline0.title"
         :textField="timeline0.text"
