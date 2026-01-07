@@ -5,7 +5,7 @@ const en: LocaleMessages = {
   USER_NAME: 'Raphael Rocha',
   USER_POSITION: 'Fullstack Engineer',
   USER_LOCATION: 'Seoul, South Korea',
-  BIO_TEXT_INTRO: `French software engineer living/working in South Korea with 2 years of experience as a developer. I'm currently working as a fullstack engineer at PhyxUp Health, based in Seoul, Mapo-gu.`,
+  BIO_TEXT_INTRO: `French software engineer living/working in South Korea with 2 years of experience as a fullstack engineer. Worked for a year in a SaaS B2B startup based in Seoul during 2025.`,
   BIO_TEXT_EXPERTISE: `Area of expertise:`,
   BIO_TEXT_BULLET_1: 'Backend: Java / Spring, Python / Django (DRF)',
   BIO_TEXT_BULLET_2: 'Frontend: Vue.js, Vuex, Tailwind',
@@ -15,7 +15,7 @@ const en: LocaleMessages = {
   BIO_TEXT_CONCLUSION: `Software engineering is deeply stimulating to me because it allows me to learn continuously while solving meaningful problems. I follow strong engineering principles and make sure the requirements are clearly understood, so that every decision contributes to clean, efficient, and maintainable solutions. Beyond making software work, I focus on building systems that reduce technical debt, improve reliability, and scale with the needs of the product.`,
   TIMELINE_TITLE_0: `Fullstack Engineer at PhyxUp Health`,
   TIMELINE_START_DATE_0: '2025-02',
-  TIMELINE_END_DATE_0: '',
+  TIMELINE_END_DATE_0: '2025-12',
   TIMELINE_TEXT_0: `Development on both front and backend with Vue and Django (DRF). Adding features, RESTful API endpoints, improving code quality of legacy code, refactoring with better structure/performance, security improvements, worked on authentication, roles/permissions, logging, handling compliance with HIPAA and FHIR.
                     I worked with PostgreSQL on our database (RDS). Improve the CI/CD processes workflows for backend and frontend, handled packaging, release and versioning for our mobile app for iOS and Android using Github Actions for backend 
                     and Cloudflare Pages for the front. Used Github Actions/Codemagic for mobile. I have set up a whole new staging environment (and deployment process, git flow) with AWS as the hosting provider 

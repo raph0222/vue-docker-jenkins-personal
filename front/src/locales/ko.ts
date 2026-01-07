@@ -7,7 +7,7 @@ const ko: Partial<LocaleMessages> = {
   USER_NAME: '라파엘 로차',
   USER_POSITION: '풀스택 개발자',
   USER_LOCATION: '서울, 대한민국',
-  BIO_TEXT_INTRO: `한국에서 생활하며 일하는 프랑스 국적의 소프트웨어 엔지니어로, 개발자 경력은 2년입니다. 현재 서울 마포구에 위치한 PhyxUp Health에서 풀스택 엔지니어로 근무하고 있습니다.`,
+  BIO_TEXT_INTRO: `한국에서 생활하며 일하는 프랑스 출신 소프트웨어 엔지니어로, 개발 경험은 2년입니다. 2025년에는 서울에 기반한 SaaS B2B 스타트업에서 풀스택 엔지니어로서 1년 동안 근무했습니다.`,
   BIO_TEXT_EXPERTISE: `전문 분야:`,
   BIO_TEXT_BULLET_1: '백엔드: Java / Spring, Python / Django (DRF)',
   BIO_TEXT_BULLET_2: '프론트엔드: Vue.js, Vuex, Tailwind',
@@ -17,7 +17,7 @@ const ko: Partial<LocaleMessages> = {
   BIO_TEXT_CONCLUSION: `소프트웨어 공학은 의미 있는 문제를 해결하면서 꾸준히 배울 수 있게 해주기 때문에 저에게 큰 자극이 됩니다. 저는 견고한 엔지니어링 원칙을 따르고 요구 사항을 명확히 이해해, 모든 결정이 깔끔하고 효율적이며 유지보수 가능한 해결책으로 이어지도록 합니다. 소프트웨어를 단순히 작동시키는 것을 넘어, 기술 부채를 줄이고 신뢰성을 높이며 제품의 요구에 맞춰 확장할 수 있는 시스템을 구축하는 데 집중합니다.`,
   TIMELINE_TITLE_0: `PhyxUp Health 풀스택 개발자`,
   TIMELINE_START_DATE_0: '2025-02',
-  TIMELINE_END_DATE_0: '',
+  TIMELINE_END_DATE_0: '2025-12',
   TIMELINE_TEXT_0: `Vue와 Django(DRF)를 사용한 프론트엔드 및 백엔드 개발.
                     기능 추가, API 엔드포인트 구현, HIPAA 및 FHIR 규정 준수 관리.
                     RDS에 호스팅된 PostgreSQL 데이터베이스 작업 수행.
