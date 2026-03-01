@@ -1,8 +1,6 @@
 # READ ME
 
-Personal resume hosted on AWS EC2 instance : [https://raphael-rocha.xyz/](https://raphael-rocha.xyz/)
-
-This project development is still ongoing. Improvements and backend project will be done. 
+Personal portfolio/resume hosted on Cloudflare at: [https://raphael-rocha.xyz/](https://raphael-rocha.xyz/)
 
 ## /Docker
 
@@ -26,24 +24,10 @@ npm install
 npm run dev
 ```
 
-## /Jenkins
+### Deployment flows
 
-This path is used to run a Jenkins server setup in a docker container.
-
-You can access jenkins from [http://localhost:8081/](http://localhost:8081/) It is used to handle code "reviews", and the deployment pipeline too for now.
-*Update the .env DOCKER_GID value with your GID for jenkins permissions with docker host to test it out*
-
-**2 pipelines** :
-
-- review : Each time code needs to be merged, jenkins will be triggered, docker inside jenkins to check the project format (eslint/prettier) before building.
-
-- deploy : get the code from github repo, docker inside jenkins to build the /dist. Send the build to an EC2 instance via ssh. Restart apache.
-
-```sh
-# the jenkins and docker files are located in /jenkins
-cd jenkins
-docker-compose up -d --build
-```
+- Cloudflare Pages setup getting updated on each push.
+- Previous AWS EC2 flow kept for history: `.github/workflows/deploy_old.yml`.
 
 ## Customize configuration
 
