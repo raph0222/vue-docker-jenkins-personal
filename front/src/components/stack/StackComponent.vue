@@ -51,6 +51,7 @@ const stack: StackCategory[] = [
       'JAX-RS',
       'JOOQ',
       'Hibernate',
+      'Flask',
       'Django (DRF)',
       'REST API',
       'Soketi',
@@ -65,7 +66,11 @@ const stack: StackCategory[] = [
   },
   {
     title: 'CI/CD',
-    skills: ['Docker', 'Jenkins', 'Git', 'Gerrit', 'GitHub', 'GitHub Actions']
+    skills: ['Docker', 'Docker Compose', 'Jenkins', 'Git', 'Gerrit', 'GitHub', 'GitHub Actions']
+  },
+  {
+    title: 'AI/LLM',
+    skills: ['LangChain', 'LangSmith', 'Ollama', 'Vertex AI (Gemini)', 'OpenAI']
   },
   {
     title: 'Cloud',

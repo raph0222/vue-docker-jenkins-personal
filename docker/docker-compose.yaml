@@ -9,7 +9,8 @@ services:
     networks:
       - front-network
     volumes:
-      - ../:/app
+      - ../front:/app/front
+      - front-node-modules:/app/front/node_modules
     ports:
       - 9992:9991
     environment:
@@ -19,3 +20,6 @@ services:
 networks:
   front-network:
     driver: bridge
+
+volumes:
+  front-node-modules:

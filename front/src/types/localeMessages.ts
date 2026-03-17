@@ -26,6 +26,10 @@ export type LocaleMessages = {
   TIMELINE_START_DATE_3: string
   TIMELINE_END_DATE_3: string
   TIMELINE_TEXT_3: string
+  PERSONAL_PROJECT_TITLE_0: string
+  PERSONAL_PROJECT_TEXT_0: string
+  PERSONAL_PROJECT_LINK_LABEL_0: string
+  PERSONAL_PROJECT_LINK_0: string
   TEXT_YEAR: string
   TEXT_MONTH: string
   DOWNLOAD_TEXT: string

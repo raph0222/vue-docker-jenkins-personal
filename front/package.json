@@ -1,6 +1,6 @@
 {
   "name": "raph",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,8 +10,8 @@
     "build-only": "vite build",
     "format": "prettier --write src/",
     "format-check": "prettier --check src/",
-    "lint": "npm run format && eslint . --ext .vue,.js,.jsx,.ts,.tsx,.cts,.mts --fix --ignore-path ../.gitignore --max-warnings 0",
-    "lint-check": "npm run format-check && eslint . --ext .vue,.js,.jsx,.ts,.tsx,.cts,.mts --ignore-path ../.gitignore --max-warnings 0"
+    "lint": "npm run format && eslint . --ext .vue,.js,.jsx,.ts,.tsx,.cts,.mts --fix --max-warnings 0",
+    "lint-check": "npm run format-check && eslint . --ext .vue,.js,.jsx,.ts,.tsx,.cts,.mts --max-warnings 0"
   },
   "dependencies": {
     "gsap": "^3.12.5",
