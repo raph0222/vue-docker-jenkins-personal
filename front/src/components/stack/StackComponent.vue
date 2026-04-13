@@ -42,18 +42,19 @@ type StackCategory = {
 const stack: StackCategory[] = [
   {
     title: 'Frontend',
-    skills: ['Vue.js', 'Three.js', 'Tailwind CSS', 'Bootstrap', 'npm']
+    skills: ['Vue.js', 'Vuex', 'Three.js', 'Tailwind CSS', 'Bootstrap', 'npm']
   },
   {
     title: 'Backend',
     skills: [
+      'Django (DRF)',
+      'Fast API',
+      'Flask',
       'Spring',
       'JAX-RS',
       'JOOQ',
       'Hibernate',
-      'Flask',
-      'Django (DRF)',
-      'REST API',
+      'RESTful API',
       'Soketi',
       'Apache',
       'Tomcat',
@@ -65,8 +66,8 @@ const stack: StackCategory[] = [
     skills: ['PostgreSQL', 'Flyway']
   },
   {
-    title: 'CI/CD',
-    skills: ['Docker', 'Docker Compose', 'Jenkins', 'Git', 'Gerrit', 'GitHub', 'GitHub Actions']
+    title: 'DevOps',
+    skills: ['Docker', 'Docker Compose', 'Jenkins', 'Git', 'GitHub', 'Ansible', 'Gerrit']
   },
   {
     title: 'AI/LLM',
@@ -81,7 +82,7 @@ const stack: StackCategory[] = [
   },
   {
     title: 'OS',
-    skills: ['Ubuntu']
+    skills: ['Linux', 'Ubuntu']
   },
   {
     title: 'Geospatial',
@@ -89,7 +90,7 @@ const stack: StackCategory[] = [
   },
   {
     title: 'More',
-    skills: ['DBeaver', 'Ansible', 'Postman', 'Vagrant', 'Sublime Merge']
+    skills: ['DBeaver', 'Postman', 'Vagrant', 'Sublime Merge']
   }
 ]
 
