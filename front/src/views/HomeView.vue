@@ -18,8 +18,8 @@ import LanguageComponent from '@/components/LanguageComponent.vue'
     <div>
       <LanguageComponent />
       <HeaderComponent />
-      <DetailsComponent />
       <EducationComponent />
+      <DetailsComponent />
       <ExperienceComponent />
       <PersonalProjectsComponent />
       <StackComponent />

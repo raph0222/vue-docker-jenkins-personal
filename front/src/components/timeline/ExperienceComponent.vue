@@ -1,7 +1,7 @@
 <template>
-  <section id="experience-section">
-    <h1 class="text-xl uppercase tracking-[0.35em] font-semibold text-white">Experience</h1>
-    <div class="mt-8">
+  <section id="experience-section" class="pt-16">
+    <SectionTitle title="Experience" />
+    <div class="pt-2">
       <TimelineField
         :title="timeline0.title"
         :textField="timeline0.text"
@@ -37,11 +37,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import SectionTitle from '@/components/common/SectionTitle.vue'
 import TimelineField from '@/components/timeline/TimelineField.vue'
 
 export default defineComponent({
   name: 'ExperienceComponent',
   components: {
+    SectionTitle,
     TimelineField
   },
   computed: {

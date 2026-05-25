@@ -24,9 +24,15 @@
       <p>
         <a class="hover:underline" :href="'mailto:' + MAIL">{{ MAIL }}</a>
       </p>
-      <p><a class="hover:underline" :href="LINKEDIN_PROFILE" target="_blank">LinkedIn</a></p>
-      <p><a class="hover:underline" :href="GITHUB_PROFILE" target="_blank">Github</a></p>
-      <p><DownloadButton class="hover:underline" /></p>
+      <p>
+        <a class="hover:underline text-blue-light" :href="LINKEDIN_PROFILE" target="_blank"
+          >LinkedIn</a
+        >
+      </p>
+      <p>
+        <a class="hover:underline text-blue-light" :href="GITHUB_PROFILE" target="_blank">Github</a>
+      </p>
+      <p><DownloadButton class="hover:underline text-blue-light" /></p>
     </div>
   </section>
 </template>

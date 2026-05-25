@@ -1,6 +1,7 @@
 <template>
-  <section id="details-section" class="">
-    <div class="space-y-6 text-base leading-relaxed text-justify">
+  <section id="details-section" class="pt-16">
+    <SectionTitle title="Summary" />
+    <div class="pt-2 space-y-6 text-base leading-relaxed text-justify">
       <p class="font-medium">
         {{ bioIntro }}
       </p>
@@ -25,6 +26,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import SectionTitle from '@/components/common/SectionTitle.vue'
 
 const BIO_BULLET_KEYS = [
   'BIO_TEXT_BULLET_1',
@@ -37,6 +39,9 @@ const BIO_BULLET_KEYS = [
 
 export default defineComponent({
   name: 'DetailsComponent',
+  components: {
+    SectionTitle
+  },
   computed: {
     bioIntro(): string {
       return this.$t('BIO_TEXT_INTRO') as string

@@ -1,11 +1,9 @@
 <template>
   <section id="stack-section" class="py-8 sm:py-16">
-    <div class="max-w-5xl mx-auto space-y-10">
-      <div class="space-y-2">
-        <p class="text-xl uppercase tracking-[0.35em] font-semibold text-white">Stack Overview</p>
-      </div>
+    <div class="max-w-5xl mx-auto">
+      <SectionTitle title="Stack Overview" />
 
-      <ul class="space-y-8 sm:space-y-6">
+      <ul class="pt-2 space-y-8 sm:space-y-6">
         <li
           v-for="category in stack"
           :key="category.title"
@@ -33,6 +31,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import SectionTitle from '@/components/common/SectionTitle.vue'
 
 type StackCategory = {
   title: string
@@ -96,6 +95,9 @@ const stack: StackCategory[] = [
 
 export default defineComponent({
   name: 'StackComponent',
+  components: {
+    SectionTitle
+  },
   setup() {
     return { stack }
   }

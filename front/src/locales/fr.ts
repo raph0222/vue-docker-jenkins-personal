@@ -37,7 +37,6 @@ const fr: Partial<LocaleMessages> = {
   TIMELINE_TEXT_2: `Conception et Développement : De manière similaire au précédent stage, j'ai réalisé les mêmes tâches pour un projet différent.`,
   TIMELINE_TITLE_3: `Développeur Web au Conseil Départemental de la Haute-Saône`,
   TIMELINE_TEXT_3: `Conception et Développement : Interface web et back-office utilisant Js/Jquery et un backend PHP. Conception de bases de données PostgreSQL.`,
-  PERSONAL_PROJECT_TITLE_0: 'Comparateur CV/Description de Poste',
   PERSONAL_PROJECT_TEXT_0: `J'ai développé une application IA prête pour la production qui analyse la compatibilité CV/offre via un pipeline de scoring basé sur des LLM. Architecture Dockerisée avec un frontend Vue 3 + Vite et un backend Python Flask, LangChain pour l'orchestration LLM sur Google Vertex AI (Gemini). Observabilité avec LangSmith, logs structurés et tracing.`,
   // period text
   TEXT_YEAR: 'an',

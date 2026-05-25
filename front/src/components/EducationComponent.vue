@@ -1,14 +1,10 @@
 <template>
-  <section id="education-section" class="py-16">
-    <div class="max-w-5xl mx-auto space-y-6">
-      <div class="space-y-2">
-        <p class="text-xl uppercase tracking-[0.35em] font-semibold text-white">
-          {{ educationTitle }}
-        </p>
-      </div>
+  <section id="education-section">
+    <div class="max-w-5xl mx-auto">
+      <SectionTitle :title="educationTitle" />
 
       <div
-        class="flex flex-col gap-3 border-t border-white/30 pt-2 text-white sm:flex-row sm:items-start sm:justify-between"
+        class="pt-2 flex flex-col gap-3 text-white sm:flex-row sm:items-start sm:justify-between"
       >
         <div>
           <p class="font-semibold">{{ educationSchool }}</p>
@@ -25,9 +21,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import SectionTitle from '@/components/common/SectionTitle.vue'
 
 export default defineComponent({
   name: 'EducationComponent',
+  components: {
+    SectionTitle
+  },
   computed: {
     educationTitle(): string {
       return this.$t('EDUCATION_TITLE') as string
