@@ -31,7 +31,8 @@ const BIO_BULLET_KEYS = [
   'BIO_TEXT_BULLET_2',
   'BIO_TEXT_BULLET_3',
   'BIO_TEXT_BULLET_4',
-  'BIO_TEXT_BULLET_5'
+  'BIO_TEXT_BULLET_5',
+  'BIO_TEXT_BULLET_6'
 ] as const
 
 export default defineComponent({

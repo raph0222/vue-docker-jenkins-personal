@@ -41,10 +41,6 @@ type StackCategory = {
 
 const stack: StackCategory[] = [
   {
-    title: 'Frontend',
-    skills: ['Vue.js', 'Vuex', 'Three.js', 'Tailwind CSS', 'Bootstrap', 'npm']
-  },
-  {
     title: 'Backend',
     skills: [
       'Django (DRF)',
@@ -62,23 +58,27 @@ const stack: StackCategory[] = [
     ]
   },
   {
-    title: 'Database',
-    skills: ['PostgreSQL', 'Flyway']
-  },
-  {
     title: 'DevOps',
     skills: ['Docker', 'Docker Compose', 'Jenkins', 'Git', 'GitHub', 'Ansible', 'Gerrit']
   },
   {
-    title: 'AI/LLM',
-    skills: ['LangChain', 'LangSmith', 'Ollama', 'Vertex AI (Gemini)', 'OpenAI']
-  },
-  {
-    title: 'Cloud',
+    title: 'Cloud/Infra',
     skills: [
       'AWS (EC2, RDS, ECR, S3, Route 53, Certificates, Load Balancer, Registrar)',
       'Cloudflare (DNS, Workers, Pages)'
     ]
+  },
+  {
+    title: 'AI/LLM Application',
+    skills: ['LangChain', 'LangSmith', 'Vertex AI (Gemini)', 'Claude']
+  },
+  {
+    title: 'Frontend',
+    skills: ['Vue.js', 'Vuex', 'Tailwind CSS', 'npm', 'Three.js']
+  },
+  {
+    title: 'Database',
+    skills: ['PostgreSQL', 'Flyway']
   },
   {
     title: 'OS',

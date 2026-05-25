@@ -9,6 +9,7 @@ export type LocaleMessages = {
   BIO_TEXT_BULLET_3: string
   BIO_TEXT_BULLET_4: string
   BIO_TEXT_BULLET_5: string
+  BIO_TEXT_BULLET_6: string
   BIO_TEXT_CONCLUSION: string
   TIMELINE_TITLE_0: string
   TIMELINE_START_DATE_0: string
