@@ -10,7 +10,8 @@ const en: LocaleMessages = {
   BIO_TEXT_BULLET_1: 'Backend: Python / Django (DRF), Flask, Fast API, Java / Spring',
   BIO_TEXT_BULLET_2: 'DevOps: Docker, Docker Compose, Git, Github, Ansible, Gerrit',
   BIO_TEXT_BULLET_3: 'Cloud/Infra: AWS, Cloudflare',
-  BIO_TEXT_BULLET_4: 'AI/LLM Application: LangChain, LangSmith, Vertex AI (Gemini), Claude',
+  BIO_TEXT_BULLET_4:
+    'AI Application: LangChain, RAG, Qdrant, LangSmith, Vertex AI (Gemini), Claude',
   BIO_TEXT_BULLET_5: 'Frontend: Vue.js, Vuex, Tailwind',
   BIO_TEXT_BULLET_6: 'Database: PostgreSQL',
   BIO_TEXT_CONCLUSION: `My interest in mathematics and computing naturally led me to software engineering, where I enjoy solving complex problems through logic, algorithms, and well-structured systems. I follow strong engineering principles and make sure requirements are clearly understood so that every decision contributes to clean, efficient, and maintainable solutions. Beyond making software work, I focus on building systems that reduce technical debt, improve reliability, and scale with the needs of the product. In recent years, I also integrated AI-assisted development tools into my workflow to improve efficiency while maintaining strong technical judgment and remaining mindful of long-term maintainability and code quality.`,
@@ -40,7 +41,10 @@ const en: LocaleMessages = {
   TIMELINE_END_DATE_3: '2019-12',
   TIMELINE_TEXT_3: `Conception and Development : Web interface and back-office using Js/Jquery and PHP backend. Conception of PostgreSQL databases.`,
   PERSONAL_PROJECT_TITLE_0: 'AI-assisted Resume/JD Comparator',
-  PERSONAL_PROJECT_TEXT_0: `Built a production-ready AI-assisted app that analyzes resume/JD fit through an LLM-based scoring pipeline. Implemented a Dockerized architecture with a Vue 3 + Vite frontend and a Python Flask backend, using LangChain for LLM orchestration on Google Vertex AI (Gemini). Observability with LangSmith and structured logging.`,
+  PERSONAL_PROJECT_TEXT_0: `Built a production-ready AI-assisted Resume/JD platform with two features: a matching feature that finds
+                            the best candidates for a given Job Description from the resume pool, and a comparison feature that scores
+                            fit between a single resume and JD. Implemented a "find best candidates" feature using a two-stage RAG pipeline: Qdrant vector search pre-
+                            filters the full resume pool to a shortlist, then an LLM scores each, limiting extra LLM calls.`,
   PERSONAL_PROJECT_LINK_LABEL_0: 'Github Repo',
   PERSONAL_PROJECT_LINK_0: 'https://github.com/raph0222/cv-jd-comparator',
   PERSONAL_PROJECT_GITHUB_LABEL: 'Github',

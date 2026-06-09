@@ -13,7 +13,8 @@ const ko: Partial<LocaleMessages> = {
   BIO_TEXT_BULLET_2: 'DevOps: Docker, Docker Compose, Git, Github, Ansible, Gerrit',
   BIO_TEXT_BULLET_3:
     '클라우드/인프라: AWS (EC2, RDS, ECR, S3, Route 53, 인증서, 로드 밸런서, Registrar), Cloudflare (DNS, Workers, Pages)',
-  BIO_TEXT_BULLET_4: 'AI/LLM Application: LangChain, LangSmith, Vertex AI (Gemini), Claude',
+  BIO_TEXT_BULLET_4:
+    'AI Application: LangChain, RAG, Qdrant, LangSmith, Vertex AI (Gemini), Claude',
   BIO_TEXT_BULLET_5: '프론트엔드: Vue.js, Vuex, Tailwind',
   BIO_TEXT_BULLET_6: '데이터베이스: PostgreSQL',
   BIO_TEXT_CONCLUSION: `수학과 컴퓨팅에 대한 관심은 자연스럽게 소프트웨어 공학으로 이어졌고, 저는 논리, 알고리즘, 잘 구조화된 시스템을 통해 복잡한 문제를 푸는 것을 즐깁니다. 저는 견고한 엔지니어링 원칙을 따르고 요구 사항을 명확히 이해해 모든 결정이 깔끔하고 효율적이며 유지보수 가능한 해결책으로 이어지도록 합니다. 소프트웨어를 단순히 작동시키는 것을 넘어, 기술 부채를 줄이고 신뢰성을 높이며 제품의 요구에 맞춰 확장할 수 있는 시스템을 구축하는 데 집중합니다. 최근 몇 년간에는 효율을 높이면서도 견고한 기술적 판단을 유지하고 장기적인 유지보수성과 코드 품질을 고려하기 위해 AI 기반 개발 도구를 워크플로에 통합했습니다.`,
@@ -38,7 +39,7 @@ const ko: Partial<LocaleMessages> = {
   TIMELINE_TEXT_2: `기획 및 개발: 이전 인턴십과 유사하게, 다른 프로젝트에서도 동일한 작업을 수행했습니다.`,
   TIMELINE_TITLE_3: `오뜨손주 지방 정부 웹 개발자`,
   TIMELINE_TEXT_3: `기획 및 개발: JS/Jquery 및 PHP 백엔드를 사용하여 웹 인터페이스 및 백오피스 개발. PostgreSQL 데이터베이스 설계.`,
-  PERSONAL_PROJECT_TEXT_0: `프로덕션급 AI 기반 앱을 구축해 이력서/채용 공고 적합도를 LLM 점수화 파이프라인으로 분석합니다. Vue 3 + Vite 프론트엔드와 Python Flask 백엔드의 Dockerized 아키텍처를 구현했으며, LangChain으로 Google Vertex AI(Gemini)에서 LLM 오케스트레이션을 처리합니다. LangSmith와 구조화 로깅 기반의 관측 가능성을 추가했습니다.`,
+  PERSONAL_PROJECT_TEXT_0: `두 가지 기능을 갖춘 프로덕션 수준의 AI 기반 이력서/JD 분석 플랫폼입니다. 매칭 기능은 이력서 풀에서 특정 채용 공고에 가장 적합한 후보자를 찾아주며, 비교 기능은 단일 이력서와 채용 공고 간의 적합도를 평가합니다. Qdrant 벡터 검색으로 전체 이력서 풀을 후보군으로 압축한 뒤, LLM이 해당 후보군을 스코어링하는 2단계 RAG 파이프라인을 통해 "최적 후보자 찾기" 기능을 구현하여, 불필요한 LLM 호출을 최소화했습니다.`,
   TEXT_YEAR: `년`,
   TEXT_MONTH: `월`,
   DOWNLOAD_TEXT: `이력서`,

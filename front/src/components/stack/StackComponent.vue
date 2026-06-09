@@ -68,8 +68,8 @@ const stack: StackCategory[] = [
     ]
   },
   {
-    title: 'AI/LLM Application',
-    skills: ['LangChain', 'LangSmith', 'Vertex AI (Gemini)', 'Claude']
+    title: 'AI Application',
+    skills: ['LangChain', 'RAG', 'Qdrant', 'LangSmith', 'Vertex AI (Gemini)', 'Claude']
   },
   {
     title: 'Frontend',

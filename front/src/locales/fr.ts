@@ -12,7 +12,8 @@ const fr: Partial<LocaleMessages> = {
   BIO_TEXT_BULLET_2: 'DevOps: Docker, Docker Compose, Git, Github, Ansible, Gerrit',
   BIO_TEXT_BULLET_3:
     'Cloud/Infra: AWS (EC2, RDS, ECR, S3, Route 53, certificats, load balancer, registrar), Cloudflare (DNS, Workers, Pages)',
-  BIO_TEXT_BULLET_4: 'AI/LLM Application: LangChain, LangSmith, Vertex AI (Gemini), Claude',
+  BIO_TEXT_BULLET_4:
+    'AI Application: LangChain, RAG, Qdrant, LangSmith, Vertex AI (Gemini), Claude',
   BIO_TEXT_BULLET_5: 'Frontend: Vue.js, Vuex, Tailwind',
   BIO_TEXT_BULLET_6: 'Base de données: PostgreSQL',
   BIO_TEXT_CONCLUSION: `Mon intérêt pour les mathématiques et l'informatique m'a naturellement conduit vers le développement, où j'aime résoudre des problèmes complexes par la logique et des systèmes bien structurés. Je m'appuie sur les principes SOLID et veille à bien comprendre les besoins afin que chaque décision contribue à des solutions propres, efficaces et maintenables. Au-delà du simple fonctionnement, je m'attache à concevoir des systèmes qui réduisent la dette technique, améliorent la fiabilité et évoluent avec les besoins du produit. Ces dernières années, j'ai également intégré des outils de développement assistés par l'IA à mon travail pour gagner en efficacité, tout en conservant un solide jugement technique et en restant attentif à la maintenabilité à long terme et à la qualité du code.`,
@@ -37,7 +38,7 @@ const fr: Partial<LocaleMessages> = {
   TIMELINE_TEXT_2: `Conception et Développement : De manière similaire au précédent stage, j'ai réalisé les mêmes tâches pour un projet différent.`,
   TIMELINE_TITLE_3: `Développeur Web au Conseil Départemental de la Haute-Saône`,
   TIMELINE_TEXT_3: `Conception et Développement : Interface web et back-office utilisant Js/Jquery et un backend PHP. Conception de bases de données PostgreSQL.`,
-  PERSONAL_PROJECT_TEXT_0: `J'ai développé une application IA prête pour la production qui analyse la compatibilité CV/offre via un pipeline de scoring basé sur des LLM. Architecture Dockerisée avec un frontend Vue 3 + Vite et un backend Python Flask, LangChain pour l'orchestration LLM sur Google Vertex AI (Gemini). Observabilité avec LangSmith, logs structurés et tracing.`,
+  PERSONAL_PROJECT_TEXT_0: `Plateforme IA production-ready d'analyse Resume/JD avec deux fonctionnalités : une fonctionnalité de matching qui trouve les meilleurs candidats pour une offre d'emploi donnée parmi le pool de CVs, et une fonctionnalité de comparaison qui évalue la compatibilité entre un CV et une offre. Implémentation d'une fonctionnalité "meilleurs candidats" via un pipeline RAG en deux étapes : une pré-sélection par recherche vectorielle Qdrant, suivie d'un scoring LLM sur la liste courte, limitant les appels LLM inutiles.`,
   // period text
   TEXT_YEAR: 'an',
   TEXT_MONTH: 'mois',
