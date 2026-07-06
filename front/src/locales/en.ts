@@ -5,7 +5,7 @@ const en: LocaleMessages = {
   USER_NAME: 'Raphael Rocha',
   USER_POSITION: 'Software Engineer',
   USER_LOCATION: 'Seoul, South Korea',
-  BIO_TEXT_INTRO: `French software engineer living/working in South Korea with 2 years of experience. Worked for a year in a SaaS B2B startup based in Seoul during 2025.`,
+  BIO_TEXT_INTRO: `French software engineer living in South Korea for 3 years, with 2 years of working experience. Worked for a year in a SaaS B2B startup based in Seoul during 2025.`,
   BIO_TEXT_EXPERTISE: `Area of expertise:`,
   BIO_TEXT_BULLET_1: 'Backend: Python / Django (DRF), Flask, Fast API, Java / Spring',
   BIO_TEXT_BULLET_2: 'DevOps: Docker, Docker Compose, Git, Github, Ansible, Gerrit',
@@ -18,28 +18,23 @@ const en: LocaleMessages = {
   TIMELINE_TITLE_0: `Software Engineer at PhyxUp Health`,
   TIMELINE_START_DATE_0: '2025-02',
   TIMELINE_END_DATE_0: '2025-12',
-  TIMELINE_TEXT_0: `Development on both front and backend with Vue and Django (DRF). Adding features, RESTful API endpoints, improving code quality of legacy code, refactoring with better structure/performance, security improvements, worked on authentication, roles/permissions, logging, handling compliance with HIPAA and FHIR.
-                    I worked with PostgreSQL on our database (RDS). Improve the CI/CD processes workflows for backend and frontend, handled packaging, release and versioning for our mobile app for iOS and Android using Github Actions for backend 
-                    and Cloudflare Pages for the front. Used Github Actions/Codemagic for mobile. I have set up a whole new staging environment (and deployment process, git flow) with AWS as the hosting provider 
-                    and Cloudflare managing the DNS resolution. Also working a lot with Docker to manage all services used inside the app.
-                    `,
+  TIMELINE_TEXT_0: `Partnered directly with the CEO, leading end-to-end delivery across software engineering, cloud infrastructure, data-driven optimization, deployment automation, testing, and production operations.`,
   TIMELINE_TITLE_1: `Software Engineer at AtolCD`,
   TIMELINE_START_DATE_1: '2023-06',
   TIMELINE_END_DATE_1: '2024-07',
-  TIMELINE_TEXT_1: `Working on multiple projects, in a team of 10~ people, multiple different stacks.
-                    Features development, bug issues, business logic development, new 
-                    RESTFUL API, webservices, security fix, on-premise captcha...
-                    I've also worked on databases, especially PostgreSQL and PostGIS extension. Integrate data with Geoserver and openLayers.
-                    Lastly, I've worked on ci/cd workflows, such as new jenkins pipelines, using docker inside jenkins and docker-compose to generate packages, databases...
-                    Setting up demo servers, java upgrades, new packaging and deployment process, documentation, Ansible script to setup the demo server.`,
+  TIMELINE_TEXT_1: `Worked as a fullstack software engineer within an IT consulting company, alongside senior engineers. Worked on various projects for French Ministry of the Interior, ARCEP, ANFR...`,
   TIMELINE_TITLE_2: `Web Developer at Provincial County of Haute-Saone`,
   TIMELINE_START_DATE_2: '2021-03',
   TIMELINE_END_DATE_2: '2021-06',
-  TIMELINE_TEXT_2: `Conception and Development : Similarly than previous internship, I achieved the same tasks for a different project.`,
+  TIMELINE_TEXT_2: `Conception and Development : Web interface and back-office.`,
   TIMELINE_TITLE_3: `Web Developer at Provincial County of Haute-Saone`,
   TIMELINE_START_DATE_3: '2019-10',
   TIMELINE_END_DATE_3: '2019-12',
-  TIMELINE_TEXT_3: `Conception and Development : Web interface and back-office using Js/Jquery and PHP backend. Conception of PostgreSQL databases.`,
+  TIMELINE_TEXT_3: `Conception and Development : continue the project from the previous internship.`,
+  KOREA_EXP_TITLE_0: `IT Headhunter at Manpower Korea`,
+  KOREA_EXP_START_DATE_0: '2022-12',
+  KOREA_EXP_END_DATE_0: '2023-05',
+  KOREA_EXP_TEXT_0: `Recruiting of backend engineers, network engineers, infrastructure engineers, DevOps and NLP engineers.`,
   PERSONAL_PROJECT_TITLE_0: 'AI-assisted Resume/JD Comparator',
   PERSONAL_PROJECT_TEXT_0: `Built a production-ready AI-assisted Resume/JD platform with two features: a matching feature that finds
                             the best candidates for a given Job Description from the resume pool, and a comparison feature that scores
@@ -52,7 +47,6 @@ const en: LocaleMessages = {
   PERSONAL_PROJECT_DEMO_LINK_0: 'https://cv-jd-comparator.pages.dev/',
   TEXT_YEAR: 'year',
   TEXT_MONTH: 'month',
-  DOWNLOAD_TEXT: 'Resume',
   EDUCATION_TITLE: 'Education',
   EDUCATION_SCHOOL: 'University Marie & Louis Pasteur (UMLP)',
   EDUCATION_DEGREE: "Bachelor's Degree - Computer Science",

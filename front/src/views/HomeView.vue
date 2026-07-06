@@ -4,6 +4,7 @@ import DetailsComponent from '@/components/DetailsComponent.vue'
 import EducationComponent from '@/components/EducationComponent.vue'
 import StackComponent from '@/components/stack/StackComponent.vue'
 import ExperienceComponent from '@/components/timeline/ExperienceComponent.vue'
+import KoreaExperienceComponent from '@/components/timeline/KoreaExperienceComponent.vue'
 import PersonalProjectsComponent from '@/components/personal/PersonalProjectsComponent.vue'
 import MenuBar from '@/components/menubar/MenuBar.vue'
 import LanguageComponent from '@/components/LanguageComponent.vue'
@@ -21,6 +22,7 @@ import LanguageComponent from '@/components/LanguageComponent.vue'
       <EducationComponent />
       <DetailsComponent />
       <ExperienceComponent />
+      <KoreaExperienceComponent />
       <PersonalProjectsComponent />
       <StackComponent />
     </div>

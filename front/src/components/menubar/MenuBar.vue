@@ -9,6 +9,7 @@
         <li><TitleMenuBar title="Education" sectionRef="#education-section" /></li>
         <li><TitleMenuBar title="Summary" sectionRef="#details-section" /></li>
         <li><TitleMenuBar title="Experience" sectionRef="#experience-section" /></li>
+        <li><TitleMenuBar title="Other Exp." sectionRef="#other-experience-section" /></li>
         <li><TitleMenuBar title="Stack" sectionRef="#stack-section" /></li>
       </ul>
     </nav>
@@ -22,6 +23,7 @@
         <li><TitleMenuBar title="Education" sectionRef="#education-section" /></li>
         <li><TitleMenuBar title="Summary" sectionRef="#details-section" /></li>
         <li><TitleMenuBar title="Experience" sectionRef="#experience-section" /></li>
+        <li><TitleMenuBar title="Other Exp." sectionRef="#other-experience-section" /></li>
         <li><TitleMenuBar title="Stack" sectionRef="#stack-section" /></li>
       </ul>
       <button

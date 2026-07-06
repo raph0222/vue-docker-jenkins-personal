@@ -32,7 +32,6 @@
       <p>
         <a class="hover:underline text-blue-light" :href="GITHUB_PROFILE" target="_blank">Github</a>
       </p>
-      <p><DownloadButton class="hover:underline text-blue-light" /></p>
     </div>
   </section>
 </template>
@@ -41,13 +40,11 @@
 import { defineComponent } from 'vue'
 import AnimatedBackground from '@/components/AnimatedBackground.vue'
 import CONST from '@/constants/const'
-import DownloadButton from '@/components/utils/DownloadButton.vue'
 
 export default defineComponent({
   name: 'HeaderComponent',
   components: {
-    AnimatedBackground,
-    DownloadButton
+    AnimatedBackground
   },
   computed: {
     userName() {

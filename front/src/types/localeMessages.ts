@@ -27,6 +27,10 @@ export type LocaleMessages = {
   TIMELINE_START_DATE_3: string
   TIMELINE_END_DATE_3: string
   TIMELINE_TEXT_3: string
+  KOREA_EXP_TITLE_0: string
+  KOREA_EXP_START_DATE_0: string
+  KOREA_EXP_END_DATE_0: string
+  KOREA_EXP_TEXT_0: string
   PERSONAL_PROJECT_TITLE_0: string
   PERSONAL_PROJECT_TEXT_0: string
   PERSONAL_PROJECT_LINK_LABEL_0: string
@@ -36,7 +40,6 @@ export type LocaleMessages = {
   PERSONAL_PROJECT_DEMO_LINK_0: string
   TEXT_YEAR: string
   TEXT_MONTH: string
-  DOWNLOAD_TEXT: string
   EDUCATION_TITLE: string
   EDUCATION_SCHOOL: string
   EDUCATION_DEGREE: string

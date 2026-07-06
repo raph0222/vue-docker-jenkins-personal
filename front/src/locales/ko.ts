@@ -21,28 +21,18 @@ const ko: Partial<LocaleMessages> = {
   TIMELINE_TITLE_0: `PhyxUp Health 소프트웨어 엔지니어`,
   TIMELINE_START_DATE_0: '2025-02',
   TIMELINE_END_DATE_0: '2025-12',
-  TIMELINE_TEXT_0: `Vue와 Django(DRF)를 사용한 프론트엔드 및 백엔드 개발.
-                    기능 추가, API 엔드포인트 구현, HIPAA 및 FHIR 규정 준수 관리.
-                    RDS에 호스팅된 PostgreSQL 데이터베이스 작업 수행.
-                    백엔드를 위한 GitHub Actions 및 프론트엔드를 위한 Cloudflare Pages를 활용하여 CI/CD 프로세스, 워크플로우 및 팀 문서화를 개선.
-                    AWS를 호스팅 제공자로, Cloudflare를 DNS 관리자로 설정하여 새로운 스테이징 환경(및 배포 프로세스) 구축.
-                    애플리케이션 내 모든 서비스를 관리하기 위해 Docker 사용.  
-                    보안 강화, 로깅(logging) 개선 등.`,
+  TIMELINE_TEXT_0: `CEO와 긴밀히 협업하며 소프트웨어 개발, 클라우드 인프라 구축 및 운영, 데이터 기반 최적화, 배포 자동화, 테스트, 프로덕션 운영을 포함한 제품 개발 전 과정을 주도했습니다.`,
   TIMELINE_TITLE_1: `AtolCD에서 소프트웨어 엔지니어`,
-  TIMELINE_TEXT_1: `여러 프로젝트에서 10명 이상의 팀과 함께 다양한 스택을 사용하여 일했습니다.
-                      기능 개발, 버그 수정, 비즈니스 로직 개발, 새로운 
-                      RESTFUL API, 웹 서비스, 보안 수정, 온프레미스 캡차 등을 처리했습니다.
-                      또한 PostgreSQL과 PostGIS 확장을 포함한 데이터베이스 작업을 했으며, Geoserver와 openLayers를 통해 데이터를 통합했습니다.
-                      마지막으로, Jenkins 파이프라인과 같은 새로운 CI/CD 워크플로우 작업을 진행하고, Jenkins 내에서 Docker를 사용하고 docker-compose로 패키지, 데이터베이스 등을 생성했습니다.
-                      데모 서버 설정, Java 업그레이드, 새로운 패키징/배포 프로세스, 문서 작성, 데모 서버 설정을 위한 Ansible 스크립트 작업을 진행했습니다.`,
+  TIMELINE_TEXT_1: `IT 컨설팅 회사에서 시니어 엔지니어들과 협업하며 풀스택 소프트웨어 엔지니어로 근무했습니다. 프랑스 내무부(French Ministry of the Interior), 프랑스 전자통신·우편·언론유통 규제청(ARCEP), 프랑스 국가주파수청(ANFR) 등 다양한 공공기관 프로젝트를 수행했습니다.`,
   TIMELINE_TITLE_2: `오뜨손주 지방 정부 웹 개발자`,
-  TIMELINE_TEXT_2: `기획 및 개발: 이전 인턴십과 유사하게, 다른 프로젝트에서도 동일한 작업을 수행했습니다.`,
+  TIMELINE_TEXT_2: `기획 및 개발: 웹 인터페이스 및 백오피스 개발.`,
   TIMELINE_TITLE_3: `오뜨손주 지방 정부 웹 개발자`,
-  TIMELINE_TEXT_3: `기획 및 개발: JS/Jquery 및 PHP 백엔드를 사용하여 웹 인터페이스 및 백오피스 개발. PostgreSQL 데이터베이스 설계.`,
+  TIMELINE_TEXT_3: `기획 및 개발: 이전 인턴십에서 진행한 프로젝트를 이어서 수행했습니다.`,
+  KOREA_EXP_TITLE_0: `맨파워코리아 IT 헤드헌터`,
+  KOREA_EXP_TEXT_0: `백엔드 엔지니어, 네트워크 엔지니어, 인프라 엔지니어, DevOps 및 NLP 엔지니어 채용.`,
   PERSONAL_PROJECT_TEXT_0: `두 가지 기능을 갖춘 프로덕션 수준의 AI 기반 이력서/JD 분석 플랫폼입니다. 매칭 기능은 이력서 풀에서 특정 채용 공고에 가장 적합한 후보자를 찾아주며, 비교 기능은 단일 이력서와 채용 공고 간의 적합도를 평가합니다. Qdrant 벡터 검색으로 전체 이력서 풀을 후보군으로 압축한 뒤, LLM이 해당 후보군을 스코어링하는 2단계 RAG 파이프라인을 통해 "최적 후보자 찾기" 기능을 구현하여, 불필요한 LLM 호출을 최소화했습니다.`,
   TEXT_YEAR: `년`,
   TEXT_MONTH: `월`,
-  DOWNLOAD_TEXT: `이력서`,
   EDUCATION_TITLE: '학력',
   EDUCATION_SCHOOL: 'University Marie & Louis Pasteur (UMLP)',
   EDUCATION_DEGREE: '컴퓨터공학 학사',
@@ -52,7 +42,7 @@ const ko: Partial<LocaleMessages> = {
   TIMELINE_CURRENT: '현재'
 }
 
-//english default overwritten by fr
+//english default
 const korean = { ...en, ...ko }
 
 export default korean
