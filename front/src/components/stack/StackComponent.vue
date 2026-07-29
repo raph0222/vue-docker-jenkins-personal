@@ -1,5 +1,5 @@
 <template>
-  <section id="stack-section" class="py-8 sm:py-16">
+  <section id="stack-section" class="pb-8 sm:pb-16">
     <div class="max-w-5xl mx-auto">
       <SectionTitle title="Stack Overview" />
 
@@ -69,7 +69,16 @@ const stack: StackCategory[] = [
   },
   {
     title: 'AI Application',
-    skills: ['LangChain', 'RAG', 'Qdrant', 'LangSmith', 'Vertex AI (Gemini)', 'Claude']
+    skills: [
+      'LangGraph',
+      'LangChain',
+      'RAG',
+      'Qdrant',
+      'pgvector',
+      'LangSmith',
+      'Vertex AI (Gemini)',
+      'Claude'
+    ]
   },
   {
     title: 'Frontend',

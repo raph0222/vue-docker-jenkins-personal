@@ -45,6 +45,13 @@ const en: LocaleMessages = {
   PERSONAL_PROJECT_GITHUB_LABEL: 'Github',
   PERSONAL_PROJECT_LIVE_DEMO_LABEL: 'Live demo',
   PERSONAL_PROJECT_DEMO_LINK_0: 'https://cv-jd-comparator.pages.dev/',
+  PERSONAL_PROJECT_TITLE_1: 'AI Supervised Agents - Agentic Customer Support',
+  PERSONAL_PROJECT_TEXT_1: `Built a multi-agent customer-support system where the agents propose actions and deterministic code decides:
+                            a LangGraph state machine routes, plans and retrieves policy through RAG over pgvector, while a Python policy
+                            engine handles the decisions before a separate executor may run any refund or return. When an action requires
+                            human approval, the conversation is frozen mid-workflow and only resumes once a reviewer has approved it.`,
+  PERSONAL_PROJECT_LINK_LABEL_1: 'Github Repo',
+  PERSONAL_PROJECT_LINK_1: 'https://github.com/raph0222/ai-supervised-agents',
   TEXT_YEAR: 'year',
   TEXT_MONTH: 'month',
   EDUCATION_TITLE: 'Education',

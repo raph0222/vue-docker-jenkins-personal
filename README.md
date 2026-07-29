@@ -28,7 +28,3 @@ npm run dev
 
 - Cloudflare Pages setup getting updated on each push.
 - Previous AWS EC2 flow kept for history: `.github/workflows/deploy_old.yml`.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
